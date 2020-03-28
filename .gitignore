@@ -2,7 +2,7 @@
 _site
 .sass-cache
 .vagrant
-
+.swp
 # general
 .DS_Store
 Thumbs.db
