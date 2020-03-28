@@ -1,0 +1,28 @@
+---
+layout: page
+title: 'Years'
+---
+
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+{%- for year in postsByYear -%}
+<a href="#{{- year.name -}}" class="btn btn-primary tag-bin"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- year.name -}}&nbsp;({{- year.size -}})</a>
+{%- endfor -%}
+<div id="full-tags-list">
+{%- for year in postsByYear -%}
+    <h2 id="{{- year.name -}}" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;{{- year.name -}}&nbsp;({{- year.size -}})
+    </h2>
+    <div class="post-list">
+        {%- for post in year.items -%}
+            <div class="tag-entry">
+                <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
+                <div class="entry-date">
+                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: site.date_format -}}</time>
+                </div>
+            </div>
+        {%- endfor -%}
+    </div>
+{%- endfor -%}
+</div>
+
