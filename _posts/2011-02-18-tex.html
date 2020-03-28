@@ -1,0 +1,15 @@
+---
+layout: post
+title: آماده سازی Tex
+date: '2011-02-18T08:17:00.000-05:00'
+author: Mahyar
+tags:
+- Linux
+- Tex
+- fedora 14
+modified_time: '2011-03-19T07:22:03.601-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-2168701107733221461
+blogger_orig_url: http://www.etedal.net/2011/02/tex.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><div>برای اینکه قادر باشد که به فارسی هم تایپ نمایید ابتدا لازم است که Tex Live&nbsp; را از <a href="http://www.tug.org/texlive/">اینجا</a> دریافت کنید.&nbsp;</div><div>و نیز دستور زیر را اجرا کنید.</div><div dir="ltr"><div style="text-align: left;">yum install perl-Tk</div></div><div dir="ltr"></div><div>سپس برای نصب به دایرکتوری DVD تک لایو که دریافت کرده اید بروید و دستور زیر را توسط کاربر ریشه اجرا نمایید</div><div></div><pre dir="ltr" style="font-family: Verdana,sans-serif; text-align: left;">perl install-tl --gui=perltk</pre><pre style="font-family: Verdana,sans-serif; text-align: right;">حال مراحل نصب را ادامه دهید در اینجا باید متغییر های محلی را تعیین نماییم برای این کار دستور زیر</pre><pre style="font-family: Verdana,sans-serif; text-align: right;">را اجرا نمایید.</pre><pre dir="ltr" style="font-family: Verdana,sans-serif; text-align: left;">gedit ~/.bash_profile</pre><pre style="font-family: Verdana,sans-serif; text-align: right;">و سپس به انتهای فایل باز شده خطوط زیر را اضافه کنید.</pre><pre style="font-family: Verdana,sans-serif; text-align: right;">&nbsp;</pre><div style="text-align: justify;"><pre dir="ltr" verdana,sans-=""><code style="font-family: Verdana,sans-serif;">PATH=/usr/local/texlive/2010/bin/i386-linux:$PATH; export PATH<br />MANPATH=/usr/local/texlive/2010/texmf/doc/man:$MANPATH; export MANPATH<br />INFOPATH=/usr/local/texlive/2010/texmf/doc/info:$INFOPATH; export INFOPATH  <br /></code>   <br /></pre></div></div></div>

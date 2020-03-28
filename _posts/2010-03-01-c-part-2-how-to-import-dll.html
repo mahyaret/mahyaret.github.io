@@ -1,0 +1,14 @@
+---
+layout: post
+title: How to import dll C#
+date: '2010-03-01T11:26:00.000-05:00'
+author: Mahyar
+tags:
+- Csharp
+modified_time: '2010-03-04T08:23:47.436-05:00'
+thumbnail: http://4.bp.blogspot.com/_e3hCVm-DI84/S4vsRSfZ2zI/AAAAAAAAAF4/ufDfBxIbmtg/s72-c/dllimport.JPG
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-3619002982049508111
+blogger_orig_url: http://www.etedal.net/2010/03/c-part-2-how-to-import-dll.html
+---
+
+make a console project and paste the code.here is the code :<br /><br />using System;<br />using System.Runtime.InteropServices;<br />class Example<br />{<br />// Use DllImport to import the Win32 MessageBox function.<br />[DllImport("user32.dll")]<br />static extern int MessageBox<br />  (IntPtr hWnd, String text, String caption, uint type);<br />static void Main()<br />{<br />   // Call the MessageBox function using platform invoke.<br />   MessageBox(new IntPtr(0), "Hello, World!", "Hello Dialog", 0);<br />}<br />}<br /><br />remeber the name MessageBox  is unique entry  in this dll.<br /><br />The <b>extern</b> modifier is used to declare a method that is implemented externally. A common use of the <b>extern</b> modifier is with the <b>DllImport</b> attribute when using Interop services to call into unmanaged code; in this case, the method must also be declared as <b>static</b><br /><br />after execution :<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_e3hCVm-DI84/S4vsRSfZ2zI/AAAAAAAAAF4/ufDfBxIbmtg/s1600-h/dllimport.JPG"><img style="margin: 0pt 0pt 10px 10px; float: right; cursor: pointer; width: 320px; height: 158px;" src="http://4.bp.blogspot.com/_e3hCVm-DI84/S4vsRSfZ2zI/AAAAAAAAAF4/ufDfBxIbmtg/s320/dllimport.JPG" alt="" id="BLOGGER_PHOTO_ID_5443704356372863794" border="0" /></a>

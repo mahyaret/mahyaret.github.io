@@ -1,0 +1,13 @@
+---
+layout: post
+title: PWM (pic18f4550)
+date: '2010-03-08T01:58:00.000-05:00'
+author: Mahyar
+tags:
+- PIC
+modified_time: '2010-03-08T02:02:29.446-05:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-1801640498981958490
+blogger_orig_url: http://www.etedal.net/2010/03/pwm-pic18f4550.html
+---
+
+to use pwm here is the ccs code:<br /><br />#include <18f4550.h><br />#fuses HS,NOWDT,NOPROTECT,NOLVP<br />#use delay(clock = 20000000)<br /><br />void main() {<br />   setup_ccp1(ccp_pwm); // Select timer and mode<br />   set_pwm1_duty(25); // Set on time <br />   setup_timer_2(T2_DIV_BY_16,248,1); // Clock rate &amp; output period<br />   while(1) { } // Wait until reset<br />}<br /><br />pin17 ---> pwm output<br />+ everything was mentioned in previous posts in order to run a 18f pic.

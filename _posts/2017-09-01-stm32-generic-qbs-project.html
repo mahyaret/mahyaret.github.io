@@ -1,0 +1,16 @@
+---
+layout: post
+title: STM32 Generic Qbs Project
+date: '2017-09-01T14:38:00.004-04:00'
+author: Mahyar
+tags:
+- ARM
+- C++
+- Robotics
+- RTOS
+modified_time: '2017-09-01T14:38:44.428-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-8169922409583919397
+blogger_orig_url: http://www.etedal.net/2017/09/stm32-generic-qbs-project.html
+---
+
+We want to compile and link an STM32 application (which uses Standard Peripheral Driver Library) in 1 click with minimal configuration time (Thanks to Nik!).<br /><br />- Install the STM link Driver from here:<br /><a href="http://www.st.com/en/development-tools/st-link-v2.html">http://www.st.com/en/development-tools/st-link-v2.html</a><br />- Install ARM GCC compiler from here:<br /><a href="https://launchpad.net/gcc-arm-embedded/5.0/5-2016-q3-update">https://launchpad.net/gcc-arm-embedded/5.0/5-2016-q3-update</a> <br />- Install QT Creator from here:<br /><a href="http://download.qt.io/official_releases/qtcreator/4.3/4.3.1/qt-creator-opensource-windows-x86_64-4.3.1.exe">http://download.qt.io/official_releases/qtcreator/4.3/4.3.1/qt-creator-opensource-windows-x86_64-4.3.1.exe</a><br />- In Qt go to Help&gt;&gt;About Plugins and enable "BareMetal" Plugin.<br />- In Qt go to Tools&gt;&gt;Options open Build &amp; Run. Go to Compilers tab and add "arm-none-eabi-gcc.exe" path to compiler path.<br />- Use my friend's QBS "STM32 Generic Qbs Project"&nbsp; from here: <br /><a href="https://github.com/RuStrannik/STM32-Qbs-Generic-Project-Example">https://github.com/RuStrannik/STM32-Qbs-Generic-Project-Example</a><br /><br />

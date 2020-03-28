@@ -1,0 +1,14 @@
+---
+layout: post
+title: پرینت از طریق سرویس پرینت ویندوز
+date: '2010-12-18T07:20:00.000-05:00'
+author: Mahyar
+tags:
+- Linux
+- fedora 14
+modified_time: '2011-03-19T02:03:43.906-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-168481759584998640
+blogger_orig_url: http://www.etedal.net/2010/12/blog-post_18.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">برای اتصال به windows printer server از طریق لینوکس و استفاده از سرویس samba به صورت زیر عمل می کنیم.</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">ابتدا سرویس cups را از طریق مرورگر وب باز می نماییم. که آدرس آن  http://localhost:631می باشد.</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">سپس بر روی تب administration&nbsp; و استفاده از add printer و استفاده از نام کاربری root و کلمه عبور کاربر ریشه مراحل بعد را انجام می دهیم.</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">گزینه Windows Printer via SAMBAرا انتخاب می کنیمو به مرحله بعد می رویم.</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">در قسمت connection آدرس را به صورت زیر وارد می نماییم.&nbsp;</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">smb://workgroup/username:password@pserver/HP Laser Black_site</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">به پرینتر اضافه شده نامی اختصاص می دهید.</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">حال مدل پرینتر مورد نظر را انتخاب می کنید.</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">حال بر روی query printer for default options&nbsp; کلیک می کنید.</div></div>

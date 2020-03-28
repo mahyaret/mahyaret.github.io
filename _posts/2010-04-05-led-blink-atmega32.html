@@ -1,0 +1,13 @@
+---
+layout: post
+title: LED Blink ATmega32
+date: '2010-04-05T15:20:00.000-04:00'
+author: Mahyar
+tags:
+- AVR
+modified_time: '2010-04-05T15:25:06.280-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-2604717569389637458
+blogger_orig_url: http://www.etedal.net/2010/04/led-blink-atmega32.html
+---
+
+here is the bascom code :<br /><br />$regfile = "m32def.dat"<br />$crystal = 8000000<br />Config Portd = Output<br />Do<br /> Portd.6 = 0<br /> Waitms 500<br /> Portd.6 = 1<br /> Waitms 500<br />Loop<br />End<br /><br />pin10 ---> vcc<br />pin11 ---> gnd<br />pin20 ---> led+resistor(470 ohm)

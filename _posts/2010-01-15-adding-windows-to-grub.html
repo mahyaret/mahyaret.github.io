@@ -1,0 +1,13 @@
+---
+layout: post
+title: Adding Windows to grub
+date: '2010-01-15T08:13:00.001-05:00'
+author: Mahyar
+tags:
+- Linux
+modified_time: '2010-10-27T11:21:43.483-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-7751402308425251089
+blogger_orig_url: http://www.etedal.net/2010/01/adding-windows-to-grub.html
+---
+
+title        Microsoft Windows XP Home Edition<br />root        (hd0,0)<br />savedefault<br />makeactive<br />chainloader    +1<br /><br />or<br /><br /><pre>menuentry "Windows XP" {<br />set root=(hd0,3)<br />chainloader +1<br />}<br /></pre>

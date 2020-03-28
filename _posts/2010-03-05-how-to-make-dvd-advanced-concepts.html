@@ -1,0 +1,13 @@
+---
+layout: post
+title: How to make a DVD (Advanced concepts)
+date: '2010-03-05T03:25:00.000-05:00'
+author: Mahyar
+tags:
+- Video and Audio
+modified_time: '2010-03-05T04:01:44.322-05:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-2562108122325337181
+blogger_orig_url: http://www.etedal.net/2010/03/how-to-make-dvd-advanced-concepts.html
+---
+
+sometime you download subtitles which are in sub/idx format which is not supported in DVD-Lab pro so you can do the following :<br /><br />1. Use dvdsupdecode to convert the .sup file into a .txt file and several .bmp files,<br />with the -bitmap parameter and either the -pal or -ntsc parameter according to the<br />original DVD you demuxed the .sup file from<br /><br />2. Open the .txt file in notepad, remove the lines at the start which are similar to the<br />following ones:<br /><br />Code:<br /><br />;Subpictures_20.sup<br />FrameRate=29.97<br />Palette=2010<br />Alpha=FFF0<br /><br />and instead add a line like this one (depending on the original value indicated by<br />"Framerate="):<br /><br />Code:<br /><br />{29.97}<br /><br />Also, do a couple global replaces to get rid of the { and } surrounding the subpicture<br />names, the easiest way is to replace {Sub with Sub and then bmp} with bmp.<br />Save the file with the ".sub" extension.<br /><br />3. Load Subtitle Workshop, and open the .sub file you just save as a MicroDVD<br />subtitle file.<br /><br />4. Save the file as a Spruce DVD Maestro .son file.<br /><br />5. Open the saved .son file in Notepad. By default, the lines at the start will read:<br /><br />Code:<br /><br />st_format 2<br />Display_Start non_forced<br />TV_Type PAL<br />Tape_Type NON_DROP<br />Pixel_Area (0 573)<br />Directory<br /><br />For NTSC only, change that to:<br /><br />Code:<br /><br />st_format 2<br />Display_Start non_forced<br />TV_Type NTSC<br />Tape_Type NON_DROP<br />Pixel_Area (2 479)<br />Directory<br /><br />Also, further down, you'll find a couple of lines that read<br /><br />Code:<br /><br />Color (0 1 2 3)<br />Contrast (0 15 15 15)<br /><br />Adjust those to match the original .txt file's "Palette=" and "Alpha=" entries, keeping<br />in mind that they go backwards. So, for our example<br /><br />Code:<br /><br />Palette=2010<br />Alpha=FFF0<br />becomes:<br />Code:<br />Color (0 1 0 2)<br />Contrast (0 15 15 15)<br /><br />Save the .son file again with the changes.<br /><br />6. Now you can import the .son subtitle file into DVD Lab Pro in the same way you<br />import .srt subtitles. Be sure to set the vertical margin to 0, and leave the "drop frame"<br />option unchecked (or the "non-drop frame" option checked, depending on whatever<br />the checkbox actually reads).

@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Machine Learning vs. Optimization '
+date: '2019-03-23T15:52:00.001-04:00'
+author: Mahyar
+tags:
+- Machine Learning
+modified_time: '2019-03-23T16:20:16.442-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-7674242257607276255
+blogger_orig_url: http://www.etedal.net/2019/03/machine-learning-vs-optimization.html
+---
+
+Although it may be an odd comparison, sometimes this can be confusing for approaching problems. On  one hand, mathematical optimization is used in machine learning  during model training, when we are trying to minimize the cost of errors  between our model and our data points. On the other hand, machine learning can be used to solve optimization problems. For many actual  problems, the data cannot be known accurately for a variety of reasons. The first reason is due to simple measurement error. The second and more  fundamental reason is that some data represent information about the  future (e.g., product demand or price for a future time period) and  simply cannot be known with certainty. The third reason is when obtaining the data is computationally intensive, even close to impossible; for instance, forecasting travel times between every two locations in a city. In these cases, we can use the power of machine learning to do the forecasting job for us. Or<i> Robust optimization</i> techniques can be used when the parameters are known only within  certain bounds; the goal is to find a solution that is feasible for all  data and optimal in some senses. Stochastic programming<a href="https://www.blogger.com/null"></a> models take advantage of the fact that probability distributions  governing the data are known or can be estimated; the goal is to find  some policy that is feasible for all (or almost all) the possible data  instances and optimize the expected performance of the model.

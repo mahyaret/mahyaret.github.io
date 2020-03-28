@@ -1,0 +1,14 @@
+---
+layout: post
+title: serial communication using PIC18f4550
+date: '2012-11-28T04:07:00.002-05:00'
+author: Mahyar
+tags:
+- PIC
+modified_time: '2012-11-28T04:07:57.440-05:00'
+thumbnail: http://3.bp.blogspot.com/-E5drNmKE6XI/ULXTcCUGfVI/AAAAAAAAATY/OOoyXn5STYQ/s72-c/rs232_pic_connections_schematic.png
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-4317406841848277085
+blogger_orig_url: http://www.etedal.net/2012/11/serial-communication-using-pic18f4550.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">//CCS C compiler <br />#include <18f4550 .h=".h"><br />#fuses HS,NOWDT<br />#use delay(clock=20MHz)<br />#use rs232(baud=9600,parity=N,xmit=PIN_B1,rcv=PIN_B2,bits=8,STOP=1)<br /><br />void main()<br />{<br /><br />while(TRUE)<br />{<br />printf("mahyar");<br />}<br />}&nbsp;</18f4550><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-E5drNmKE6XI/ULXTcCUGfVI/AAAAAAAAATY/OOoyXn5STYQ/s1600/rs232_pic_connections_schematic.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="254" src="http://3.bp.blogspot.com/-E5drNmKE6XI/ULXTcCUGfVI/AAAAAAAAATY/OOoyXn5STYQ/s320/rs232_pic_connections_schematic.png" width="320" /></a></div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-zdoY435oroQ/ULXUC2IiqJI/AAAAAAAAATg/aqfCCYhTy-g/s1600/rs232_pic_Setting.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="320" src="http://1.bp.blogspot.com/-zdoY435oroQ/ULXUC2IiqJI/AAAAAAAAATg/aqfCCYhTy-g/s320/rs232_pic_Setting.png" width="278" /></a></div><br /></div>

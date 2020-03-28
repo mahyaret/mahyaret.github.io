@@ -1,0 +1,16 @@
+---
+layout: post
+title: Raspberry Pi 4 as a NAS
+date: '2019-09-28T17:22:00.000-04:00'
+author: Mahyar
+tags:
+- Linux
+- RaspberryPi
+- debian
+modified_time: '2019-11-22T09:15:45.329-05:00'
+thumbnail: https://1.bp.blogspot.com/-1ghALR1EWSw/XY_c62WOmQI/AAAAAAAAA7w/tAey5M4DmikDlIEq9jr5fF0_U6d7kwDowCEwYBhgL/s72-c/JPEG%2Bimage-51AE4A518482-1.jpeg
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-2799093054464687570
+blogger_orig_url: http://www.etedal.net/2019/09/raspberry-pi-4-as-nas.html
+---
+
+I've bought Raspberry Pi 4 to use it as a DaaS (Desktop as a Service). I've needed a VPN server to securely connect to when I am traveling. I've needed a Cloud Server to replace Dropbox to have unlimited space. I've needed a NAS (Network-attached storage) to share files among my laptops and computers. I've also needed a Music Player Server to manage my music files and serve as a source for my amplifier. I've also needed a media player like Apple TV to play my movies, youtube etc.<br /><br />In summary Raspberry Pi as:<br />1. <a href="http://www.etedal.net/2019/09/raspberry-pi-4-as-cloud-server.html" target="_blank">Cloud server</a><br />2. <a href="http://www.etedal.net/2019/09/raspberry-pi-4-as-vpn-server.html" target="_blank">VPN server</a><br />3. <a href="http://www.etedal.net/2019/09/raspberry-pi-4-as-nas.html" target="_blank">NAS</a> (this post)<br />4. <a href="http://www.etedal.net/2019/09/raspberry-pi-4-as-hifi-music-server.html" target="_blank">Music server</a><br />5. <a href="http://www.etedal.net/2019/09/raspberry-pi-4-as-media-player.html" target="_blank">Media Player</a><br /><br /><a name='more'></a><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-1ghALR1EWSw/XY_c62WOmQI/AAAAAAAAA7w/tAey5M4DmikDlIEq9jr5fF0_U6d7kwDowCEwYBhgL/s1600/JPEG%2Bimage-51AE4A518482-1.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="987" data-original-width="1600" height="197" src="https://1.bp.blogspot.com/-1ghALR1EWSw/XY_c62WOmQI/AAAAAAAAA7w/tAey5M4DmikDlIEq9jr5fF0_U6d7kwDowCEwYBhgL/s320/JPEG%2Bimage-51AE4A518482-1.jpeg" width="320" /></a><a href="https://1.bp.blogspot.com/-y0W5wo3PztY/XY_c6re4fTI/AAAAAAAAA7w/nqE1lWjRWqMRJKxm7D4ZlJaprZXIzjthwCEwYBhgL/s1600/JPEG%2Bimage-233E2BAC51FD-1.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1600" data-original-width="1149" height="200" src="https://1.bp.blogspot.com/-y0W5wo3PztY/XY_c6re4fTI/AAAAAAAAA7w/nqE1lWjRWqMRJKxm7D4ZlJaprZXIzjthwCEwYBhgL/s200/JPEG%2Bimage-233E2BAC51FD-1.jpeg" width="143" /></a></div><br /><br /><br />To be able to do all of the above, I think it is better to keep the original Raspbian distribution.<br /><br />For achieving this I have installed Samba Server:<br />sudo apt-get install samba samba-common-bin<br /><br />sudo mkdir -m 1777 /share<br /><br />sudo emacs /etc/samba/smb.conf<br /><br />add the following:<br />[share]<br />Comment = Pi shared folder<br />Path = /share<br />Browseable = yes<br />Writeable = Yes<br />only guest = no<br />create mask = 0777<br />directory mask = 0777<br />Public = yes<br />Guest ok = yes<br /><br /><br />Create a Samba user:<br /><br />sudo smbpasswd -a pi<br /><br />sudo /etc/init.d/samba restart

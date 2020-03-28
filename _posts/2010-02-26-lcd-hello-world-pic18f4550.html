@@ -1,0 +1,14 @@
+---
+layout: post
+title: Lcd Hello World pic18f4550
+date: '2010-02-26T06:32:00.000-05:00'
+author: Mahyar
+tags:
+- PIC
+modified_time: '2010-03-04T14:31:00.912-05:00'
+thumbnail: http://4.bp.blogspot.com/_e3hCVm-DI84/S4e0a61_1SI/AAAAAAAAADY/F51sF8qxRyM/s72-c/26022010289.jpg
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-9177700653826399736
+blogger_orig_url: http://www.etedal.net/2010/02/lcd-hello-world-pic18f4550.html
+---
+
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_e3hCVm-DI84/S4e0a61_1SI/AAAAAAAAADY/F51sF8qxRyM/s1600-h/26022010289.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 240px;" src="http://4.bp.blogspot.com/_e3hCVm-DI84/S4e0a61_1SI/AAAAAAAAADY/F51sF8qxRyM/s320/26022010289.jpg" alt="" id="BLOGGER_PHOTO_ID_5442517049265870114" border="0" /></a><br /><br />here is ccs code :<br /><br />#include <18f4550.h><br />#fuses HS,NOWDT,NOPROTECT,NOLVP<br />#use delay(clock=4000000)<br />#include <lcd.c><lcd.c><br /><br />void main() {<br />lcd_init();<br />lcd_putc("Hello!");<br />}<br /><br />LCD pins D0-D3 are not used and PIC D3 is not used.<br /><br />D0  enable<br />D1  rs<br />D2  rw<br />D4  D4<br />D5  D5<br />D6  D6<br />D7  D7</lcd.c>

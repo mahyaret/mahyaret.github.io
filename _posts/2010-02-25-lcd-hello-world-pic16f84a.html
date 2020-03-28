@@ -1,0 +1,14 @@
+---
+layout: post
+title: Lcd Hello World pic16f84a
+date: '2010-02-25T09:11:00.000-05:00'
+author: Mahyar
+tags:
+- PIC
+modified_time: '2010-03-01T11:42:30.986-05:00'
+thumbnail: http://4.bp.blogspot.com/_e3hCVm-DI84/S4dRzWMtAYI/AAAAAAAAADQ/H_wUaCum5R4/s72-c/helloworld.jpg
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-2523944952134665214
+blogger_orig_url: http://www.etedal.net/2010/02/lcd-hello-world-pic16f84a.html
+---
+
+<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_e3hCVm-DI84/S4dRzWMtAYI/AAAAAAAAADQ/H_wUaCum5R4/s1600-h/helloworld.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 240px;" src="http://4.bp.blogspot.com/_e3hCVm-DI84/S4dRzWMtAYI/AAAAAAAAADQ/H_wUaCum5R4/s320/helloworld.jpg" alt="" id="BLOGGER_PHOTO_ID_5442408617274573186" border="0" /></a><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_e3hCVm-DI84/S4dRs8wUBvI/AAAAAAAAADI/fYa0GsLvYCo/s1600-h/lcd216.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 190px; height: 320px;" src="http://1.bp.blogspot.com/_e3hCVm-DI84/S4dRs8wUBvI/AAAAAAAAADI/fYa0GsLvYCo/s320/lcd216.jpg" alt="" id="BLOGGER_PHOTO_ID_5442408507365394162" border="0" /></a><br /><br /><br /><br />here is the mikroC code:<br /><br />// LCD module connections<br />sbit LCD_RS at RB4_bit;<br />sbit LCD_EN at RB5_bit;<br />sbit LCD_D4 at RB0_bit;<br />sbit LCD_D5 at RB1_bit;<br />sbit LCD_D6 at RB2_bit;<br />sbit LCD_D7 at RB3_bit;<br /><br />sbit LCD_RS_Direction at TRISB4_bit;<br />sbit LCD_EN_Direction at TRISB5_bit;<br />sbit LCD_D4_Direction at TRISB0_bit;<br />sbit LCD_D5_Direction at TRISB1_bit;<br />sbit LCD_D6_Direction at TRISB2_bit;<br />sbit LCD_D7_Direction at TRISB3_bit;<br />// End LCD module connections<br /><br />char *text = "Hello World"; //Constant holding text to be displayed<br /><br />void main()         //Main program<br />{<br />TRISB = 0;                // PORTB is output<br />Lcd_Init();         // Initialize LCD connected to PORTB<br />Lcd_Cmd(_Lcd_CLEAR);       // Clear data on lcd<br />Lcd_Cmd(_LCD_CURSOR_OFF);  // Turn cursor off<br />while(1)  //while loop, not necessarily needed<br />{<br />PORTA = ~PORTA;<br />Lcd_Out(1, 1, text);   // Print text to LCD, 2nd row, 1st column<br />}<br />}

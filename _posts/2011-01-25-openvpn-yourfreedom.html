@@ -1,0 +1,14 @@
+---
+layout: post
+title: چگونه از حالت openvpn yourfreedom استفاده کنیم
+date: '2011-01-25T09:26:00.000-05:00'
+author: Mahyar
+tags:
+- Linux
+- fedora 14
+modified_time: '2011-03-19T02:01:50.857-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-5899234785822076360
+blogger_orig_url: http://www.etedal.net/2011/01/openvpn-yourfreedom.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><div style="color: red;">استفاده از این قسمت برای کسانی است که تمایل دارند از سرویس هایی نظیر google code و ... که ایران را تحریم کرده اند استفاده نمایند و مسئولیت سوء استفاده از این مطلب بر عهده خواننده می باشد.</div><br />برای این کار باید ابتدا گروه خود را مشخص کنید پس دستور زیر را اجرا نمایید</div><div style="font-family: Verdana,sans-serif; text-align: left;">groups</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">مثلا یکی از گروه هایی که من در آن هستم mahyar است که در نتیجه دستور بالا برایم ظاهر شد حال دستور زیر را اجرا نمایید</div><pre style="font-family: Verdana,sans-serif;"></pre><div style="font-family: Verdana,sans-serif; text-align: left;"># cd /usr/sbin</div><div style="font-family: Verdana,sans-serif; text-align: left;"># chgrp mahyar openvpn</div><div style="font-family: Verdana,sans-serif; text-align: left;"># chmod u+s,g+rx,o-rx openvpn</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">حال برنام را اجرا نمایید و در قسمت configure&nbsp; در تب openvpn setting روبروی executable آدرس/usr/sbin/openvpn /&nbsp; را وارد نمایید سپس بر روی save and exit کلیک کنید و حالا start connection را کلیک کنید سپس در تب port گزینه&nbsp; openvpn port را کلیک کنید .</div><div style="font-family: Verdana,sans-serif; text-align: left;"></div></div>

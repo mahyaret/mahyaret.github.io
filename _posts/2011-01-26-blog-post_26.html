@@ -1,0 +1,14 @@
+---
+layout: post
+title: جستجوی فایل و فولدر
+date: '2011-01-26T03:41:00.000-05:00'
+author: Mahyar
+tags:
+- Linux
+- fedora 14
+modified_time: '2011-03-19T02:01:40.855-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-2291871495141152540
+blogger_orig_url: http://www.etedal.net/2011/01/blog-post_26.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><span style="font-size: small;">برای این کار اگر تنها می خواهید جستجو را بدون هیچ شرط خاصی انجام دهید از دستور locate استفاده کنید ولی اگر مایل به جستجو به صورت تخصصی هستید از دستورات توضیح داده شده در پایین استفاده کنید.</span></div><div style="font-family: Verdana,sans-serif; text-align: left;"><span style="font-size: small;"> find / -name 'program.c'</span></div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><span style="font-size: small;">دستور بالا دایرکتوری ریشه یعنی / را برای یافتن program.c&nbsp; جستجو می کند.</span></div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><span style="font-size: small;">می توانید قبل یا بعد از عبارت مورد نظر از ستاره استفاده کنید که به معنای این است به دنبال عباراتی بگرد که عبارت مورد نظر در ابتدا یا انتهای آن قرار دارد .&nbsp;</span></div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><span style="font-size: small;">در صورتی که تمایل ندارید که جستجو به صورت case sensitive صورت گیرد باید به ابتدای عبارت name یک i اضافه کنیم یعنی iname</span></div><div style="font-family: Verdana,sans-serif; text-align: left;"><span style="font-size: small;"><br />$                    find /mp3-collection -name 'Metallica*' -and -size +10000k&nbsp;</span></div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><span style="font-size: small;">در دستور بالا از and استفاده شده و بجای آن از عبارت منطقی خق نیز می توان استفاده کرد و روبروی size از + استفاده شده که به معنای "حجم بیشتر از" می باشد که با استفاده از - بجای + می توان به دنیال فایل های با حجم کمتر از عدد دلخواه گشت.</span></div><div style="font-family: Verdana,sans-serif;"><span style="font-size: small;">$ find /home/mahyar -amin -10 -name '*.c'&nbsp;&nbsp;&nbsp;&nbsp; ---&gt;فایل هایی که در ۱۰ دقیقه گذشته به آنها رجوع شده<br />$ find /home/mahyar -atime -2 -name '*.c'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---&gt;</span><span style="font-size: small;">فایل هایی که در ۲ ساعت گذشته به آنها رجوع شده</span><span style="font-size: small;">                   $ find /home/mahyar -mmin -10 -name '*.c'&nbsp;&nbsp;&nbsp; ---&gt;</span><span style="font-size: small;">فایل هایی که در ۱۰ دقیقه گذشته آنها تغییر کرده اند</span><span style="font-size: small;"><br />$ find /home/mahyar -mtime -2 -name '*.c'&nbsp;&nbsp;&nbsp;&nbsp; ---&gt;</span><span style="font-size: small;">فایل هایی که در ۲ ساعت گذشته آنها تغییر کرده اند</span></div></div>

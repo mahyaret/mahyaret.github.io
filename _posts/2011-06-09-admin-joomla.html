@@ -1,0 +1,13 @@
+---
+layout: post
+title: تغییر کلمه عبور admin  در joomla
+date: '2011-06-09T13:49:00.000-04:00'
+author: Mahyar
+tags:
+- Joomla
+modified_time: '2011-06-09T13:49:01.449-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-2748123365425273467
+blogger_orig_url: http://www.etedal.net/2011/06/admin-joomla.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="rtl" style="text-align: right;">در صورتی که با استفاده از پست قبل joomla&nbsp; را نصب کردید برای تغییر کلمه عبور و همچنین نام کاربری Admin از منوی اصلی Cpanel گزینه ی phpmyadmin&nbsp; را انتخاب کنبد و نام پایگاه داده مورد نظر را در منوی سمت چپ که jmla1 می باشد را انتخاب کنید سپس وارد تب Query شوید و دستور زیر را وارد نمایید.</div><div dir="rtl" style="text-align: right;"><br /></div><div style="text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UPDATE `jos_users` SET `password` = MD5( 'new password' ) WHERE `jos_users`.`username` = "admin"</div></div>

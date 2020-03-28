@@ -1,0 +1,14 @@
+---
+layout: post
+title: How to set up a personal home web server (100% free)
+date: '2015-07-18T11:56:00.001-04:00'
+author: Mahyar
+tags:
+- Linux
+- Network
+modified_time: '2015-07-18T11:56:17.991-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-1252434066492007926
+blogger_orig_url: http://www.etedal.net/2015/07/how-to-set-up-personal-home-web-server.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">First step is assigning a globally known address to your home network. Remote access via Dynamic DNS makes this possible. There are many websites provide such service. I have used <a href="http://www.noip.com/">http://www.noip.com</a> because my internet modem/router supports this website! You have to register in noip website and then you have to add a Host (DNS Host (A)).<br /><br />Next thing is configuring your modem/router for updating the website with your Dynamic Valid IP address. For doing this you have to find DDNS (Dynamic DNS) under Network settings and enter your noip account details.<br /><br />For security reason you still cannot access you computers via internet. For doing this you have to use DMZ service. First assign a static IP address for the computer that you want to use it as the&nbsp; server (e.g. 192.168.2.100). Then add this IP address as DMZ device.<br /><br />Now you have a connected server. You can now install LAMP or WAMP.</div>

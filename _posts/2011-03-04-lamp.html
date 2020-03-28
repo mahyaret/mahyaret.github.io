@@ -1,0 +1,15 @@
+---
+layout: post
+title: نصب LAMP
+date: '2011-03-04T06:25:00.000-05:00'
+author: Mahyar
+tags:
+- Linux
+- fedora 14
+- Joomla
+modified_time: '2011-03-19T01:53:32.843-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-6391810104887724576
+blogger_orig_url: http://www.etedal.net/2011/03/lamp.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">ابتدا می خواهیم mysql را نصب نماییم&nbsp;</div><div style="font-family: Verdana,sans-serif; text-align: left;">yum install mysql mysql-server</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">حال به منظور آغاز سرویس mysql در هنگام شروع کار سیستم دستور زیر را اجرا نمایید.</div><div style="font-family: Verdana,sans-serif; text-align: left;">chkconfig --levels 235 mysqld on</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">حال برای کامل کردن نصب دستورات زیر را اجرا نمایید. </div><div style="font-family: Verdana,sans-serif; text-align: left;">/etc/init.d/mysqld start</div><div style="font-family: Verdana,sans-serif; text-align: left;">mysql_secure_installation</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">حال قصد داریم Apache2&nbsp; را نصب نماییم برای این کار دستور زیر را اجرا نمایید.</div><div style="font-family: Verdana,sans-serif; text-align: left;">yum install httpd</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">حال برای آنکه سرویس آن نیز در هنگام بوت راه اندازی شود دستور زیر را اجرا نمایید</div><div style="font-family: Verdana,sans-serif; text-align: left;">chkconfig --levels 235 httpd on</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">حال سرویس را شروع کنید</div><div style="font-family: Verdana,sans-serif;">/etc/init.d/httpd start</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">حال به منظور تست سرور یکی از آدرس های زیر را در مرورگر خود تایپ نمایید</div><div style="font-family: Verdana,sans-serif;">http://localhost</div><div style="font-family: Verdana,sans-serif;">http://127.0.0.1</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">محل قرار گرفتن سایت شما در <span class="system">/var/www/html می باشد</span></div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><span class="system">حال قصد داریم PHP را نصب نماییم</span></div><div style="font-family: Verdana,sans-serif;">yum install php</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">که البته نیاز است که دوباره سرور آپاچی از نو شروع شود</div><div style="font-family: Verdana,sans-serif; text-align: left;">/etc/init.d/httpd restart</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">&nbsp; </div><div style="font-family: Verdana,sans-serif; text-align: left;"></div></div>

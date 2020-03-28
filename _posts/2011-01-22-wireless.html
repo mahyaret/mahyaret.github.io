@@ -1,0 +1,15 @@
+---
+layout: post
+title: هک کردن wireless
+date: '2011-01-22T08:55:00.000-05:00'
+author: Mahyar
+tags:
+- Linux
+- Hack
+- fedora 14
+modified_time: '2011-03-19T02:02:09.801-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-7917696767827083335
+blogger_orig_url: http://www.etedal.net/2011/01/wireless.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><span style="color: red;">توجه شود که مسئولیت سوء استفاده از این قسمت به عهده خواننده می باشد این مطلب تنها به منظور تست امنیت شبکه می باشد.</span><br /><br />توجه کنید که آموزش زیر مربوط به WEP می باشد</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">برای انجام این کار باید برنامه زیر را از سایتی مثلا http://www.rpmfind.net&nbsp; دریافت نمایید و نصب نمایید.aircrack-ng-1.0-1.fc12.i686</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">بعد از نصب این برنامه شما ابتدا باید access point های در دسترس را بررسی نمایید پس ابتدا سرویس این نرم افزار را فعال می کنید</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">su - </div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">airmon-ng start wlan0</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">حال برای بررسی شبکه ها دستور زیر را توسط کاربر ریشه اجرا نمایید.</div><div style="font-family: Verdana,sans-serif; text-align: left;">airodump-ng mon0</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">&nbsp;حال مدتی را صبر می کنید تا کاربری را که به هر یک از access point های موجود associated شده است را هم مشاهده کنید حال اگر enc شبکه نیز wep است شروع به capture کردن داده ها کنید برای این کار دستور زیر را اجرا کنید</div><div style="font-family: Verdana,sans-serif; text-align: left;">airodump-ng --channel 12 --bssid 00:1C:10:FE:C1:5B -w mahyar mon0</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">که البته بدیهی است که به جای مک آدرس بالا باید مک آدرس access point مورد نظرتان را تایپ نمایید اما ممکن است که بعد از اجرای دستور بالا فعالیتی مشاهده نشود که در این صورت باید کانال را عوض کنید که برای این کار عدد روبروی channel را عوض کنید</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">حال باید در حدود ۲۰۰۰۰ packet را دریافت نمایید و سپس تلاش برای کرک کردن را آغاز کنید اما ممکن است کلمه عبور ضعیف باشد و نیاز به این همه packet نباشد که در این صورت هر ۵۰۰۰ packet یکبار دستور زیر را اجرا کنید و شانس خود را امتحان کنید</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><br /></div><div style="font-family: Verdana,sans-serif;">aircrack-ng mahyar*.cap</div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">در صورت موفقیت کد HEX در اختیار شما قرار می گیرد که باید همان را وارد نمایید البته بدون ":" </div><div style="font-family: Verdana,sans-serif;"><br /></div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><br /></div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><br /></div></div>

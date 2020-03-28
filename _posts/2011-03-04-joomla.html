@@ -1,0 +1,15 @@
+---
+layout: post
+title: نصب Joomla
+date: '2011-03-04T06:49:00.000-05:00'
+author: Mahyar
+tags:
+- Linux
+- fedora 14
+- Joomla
+modified_time: '2011-03-19T01:53:04.107-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-3871823960419454447
+blogger_orig_url: http://www.etedal.net/2011/03/joomla.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><div dir="rtl" style="color: black; font-family: Verdana,sans-serif; text-align: right;">ابتدا joomla را از سایت آن دریافت کنید و سپس بسته آن را از حالت فشرده سازی خارج کنید و در فالدری مثلا به نام joomla در /var/www/html قرار دهید&nbsp;</div><div dir="rtl" style="color: black; font-family: Verdana,sans-serif; text-align: right;">حال یک پایگاه داده را باید برای راه اندازی joomla بسازیم پس دستور زیر را اجرا کنید تا پایگاه داده ای با نام joomla v را بسازد.</div><div style="color: black; font-family: Verdana,sans-serif; text-align: left;">mysqladmin -uroot -prootpassword create joomla</div><div style="color: black; font-family: Verdana,sans-serif; text-align: left;"># mysql -uroot -prootpassword mysql<br />&nbsp; &nbsp; <br />&nbsp; &nbsp; &nbsp;  &gt; grant access on joomla.* to joomlauser@'localhost' identified by 'joomlapassword'<br />&nbsp; &nbsp; &nbsp;  &gt; quit&nbsp;</div><div dir="rtl" style="color: black; font-family: Verdana,sans-serif; text-align: right;">دستورات زیر را برای اجازه دسترسی به فالدر های مورد نیاز را اجرا کنید</div><div style="color: black; font-family: Verdana,sans-serif; text-align: left;">&nbsp;&nbsp;&nbsp; cd /var/www/html<br />&nbsp; &nbsp; chown -R apache:apache *<br />&nbsp; &nbsp; find -type f | xargs chmod 664<br />&nbsp; &nbsp; find -type d | xargs chmod 775 &nbsp;</div><div style="color: black; font-family: Verdana,sans-serif; text-align: left;"><br /></div><div dir="rtl" style="color: black; font-family: Verdana,sans-serif; text-align: right;">حال برای ادامه روند نصب joomla آدرس زیر را در یک مرورگر وراد نمایید</div><div style="color: black; font-family: Verdana,sans-serif; text-align: left;">localhost/joomla</div><div style="color: black; font-family: Verdana,sans-serif; text-align: left;"><br /></div><div dir="rtl" style="color: black; font-family: Verdana,sans-serif; text-align: right;"><br /></div><div style="color: black; font-family: Verdana,sans-serif; text-align: left;"></div></div>

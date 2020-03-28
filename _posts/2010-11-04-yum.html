@@ -1,0 +1,14 @@
+---
+layout: post
+title: yum خطا در اجرای
+date: '2010-11-04T07:41:00.000-04:00'
+author: Mahyar
+tags:
+- Linux
+- fedora 14
+modified_time: '2011-03-19T02:05:49.233-04:00'
+blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-7687092127802842127
+blogger_orig_url: http://www.etedal.net/2010/11/yum.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><blockquote style="font-family: Verdana,sans-serif;"><i>Error: Cannot retrieve repository metadata (repomd.xml) for repository: fedora. Please verify its path and try again</i></blockquote><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;"><br /></div><div dir="rtl" style="font-family: Verdana,sans-serif; text-align: right;">برای اینکار باید فایل های /etc/yum.repos.d/fedora.repo و /etc/yum.repos.d/fedora-updates.repo را تغییر دهید ابتدا علامت #&nbsp; را از جلوی baseurl برداشته و به جلوی mirrorlist منتقل نمایید سپس خطوط زیر را به فایل /etc/hosts اضافه نمایید:</div><div style="font-family: Verdana,sans-serif; text-align: left;"><br />80.239.156.215&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mirrors.fedoraproject.org</div><div style="font-family: Verdana,sans-serif; text-align: left;">213.129.242.84&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mirrors.rpmfusion.org</div></div>
