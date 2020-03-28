@@ -28,7 +28,7 @@ navbar-links:
     - Publications: "p/pubs.html"
   Resume & Portfolio: "p/resume.html"
   Archive: 
-    - Year: "years"
+    - Years: "years"
     - Tags: "tags"
   About Me: "p/about-me.html"
 
