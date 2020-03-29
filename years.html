@@ -4,10 +4,12 @@ title: 'Year Index'
 ---
 
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+
 {%- for year in postsByYear -%}
-<a href="#{{- year.name -}}" class="btn btn-primary tag-bin"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- year.name -}}&nbsp;({{- year.size -}})</a>
+<a href="#{{- year.name -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- year.name -}}&nbsp;({{- year.size -}})</a>
 {%- endfor -%}
-<div id="full-tags-list">
+
+<div id="full-year-list">
 {%- for year in postsByYear -%}
     <h2 id="{{- year.name -}}" class="linked-section">
         <i class="fas fa-tag" aria-hidden="true"></i>
