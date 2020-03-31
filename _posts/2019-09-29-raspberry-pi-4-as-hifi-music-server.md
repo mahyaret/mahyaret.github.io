@@ -37,7 +37,9 @@ I have bought Allo DigiOne HaT from [here](https://www.allo.com/sparky/digione.h
 Why such boards are needed for enhancing the sound quality for feeding into the amplifier or DAC? When you want to transfer a digital file and you don't care about the timing, it is a fairly easy task and since sound files are all zeros and ones it's going to be transferred perfectly. However, when you want to play this file on your stereo system everything should happen in real-time. Every ones and zeros should be perfectly send in the perfect intervals. In this "real-time" situations everything matters even for a digital signal which consists of zeros and ones, from quality of wire, board connections etc. Even the noise produced by cpu can interfere with transferring signals. That is why it is claimed that RP 3 has a better sound quality compare to RP 4 using same ALLO Transport board and external linear power supply ([source](https://www.youtube.com/watch?v=cjqEPyMr1zI)).  
   
 You only need to mount this HaT onto you RP and add `dtoverlay=allo-digione` to boot setting:  
+
 `sudo emacs /boot/config.txt  `
+
 reboot your RP.
 From Menu in Raspbian open `Preferences>>Audio Device Settings`
 Make sure that `snd\_allo\_digione (Alsa mixer)` is selected.
@@ -53,7 +55,9 @@ Since I have not used Volumio I had to install MPD from scratch. A typical setup
 [![upmpdcli](https://www.lesbonscomptes.com/upmpdcli/pics/upmpdcli.png)](https://www.lesbonscomptes.com/upmpdcli/pics/upmpdcli.png)
 
 But I have only installed MPD:  
+
 `sudo emacs /etc/mpd.conf`
+
 Change the directory MPD looks for music and  set MPD config as follows:  
 ```
 audio_output {
@@ -69,10 +73,15 @@ device "hw:sndallodigione"
 }
 ```
 and comment the following line:  
-`# user                          "mpd" `
+`# user "mpd" `
+
 then:
+
 `sudo systemctl enable mpd`
+
 `sudo systemctl start mpd`
+
 `sudo systemctl restart mpd `
+
 For remotely controlling MPD I have used this project:
 [https://github.com/Nyx0uf/shinobu](https://github.com/Nyx0uf/shinobu)
