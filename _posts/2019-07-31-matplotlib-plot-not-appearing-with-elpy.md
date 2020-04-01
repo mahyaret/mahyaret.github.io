@@ -11,4 +11,18 @@ blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-824623860751599964
 blogger_orig_url: http://www.etedal.net/2019/07/matplotlib-plot-not-appearing-with-elpy.html
 ---
 
-For solving this, you can use different back-end:<br /><br />import matplotlib<br />matplotlib.use('TkAgg')<br />import matplotlib.pyplot as plt <br /><br />Other GUI backends:<br /><ul><li>TkAgg</li><li>WX</li><li>QTAgg</li><li>QT4Agg</li></ul>Run your code using: C-u C-c C-c
+
+For solving this, you can use different back-end:  
+```  
+import matplotlib  
+matplotlib.use('TkAgg')  
+import matplotlib.pyplot as plt  
+```  
+Other GUI backends:  
+
+*   `TkAgg`
+*   `WX`
+*   `QTAgg`
+*   `QT4Agg`
+
+Run your code using: `C-u C-c C-c`
