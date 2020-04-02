@@ -12,4 +12,29 @@ blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-690355894097967945
 blogger_orig_url: http://www.etedal.net/2019/03/google-test-gtest-in-debian.html
 ---
 
-Here is the link to the project source <a href="https://github.com/google/googletest">https://github.com/google/googletest</a> <br /><br />Here is the code for installing Google Test (gtest)<br /><script src="https://gist.github.com/mahyaret/8673f15f459049f75d426ae2f05634bf.js"></script>
+
+Here is the link to the project source [https://github.com/google/googletest](https://github.com/google/googletest)  
+  
+  
+Here is the code for installing Google Test (gtest)
+```
+sudo apt-get install libgtest-dev
+```
+
+Install `cmake`
+```
+sudo apt-get install cmake
+```
+compiling `gtest`
+```
+cd /usr/src/gtest
+sudo cmake CMakeLists.txt
+sudo make
+sudo cp *.a /usr/lib
+sudo mkdir /usr/local/lib/googletest
+```
+linking `gtest`
+```
+sudo ln -s /usr/lib/libgtest.a /usr/local/lib/gtest/libgtest.a
+sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/gtest/libgtest_main.a
+```
