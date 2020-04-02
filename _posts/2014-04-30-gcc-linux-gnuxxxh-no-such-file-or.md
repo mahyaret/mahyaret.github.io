@@ -11,4 +11,10 @@ blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-597907730142292380
 blogger_orig_url: http://www.etedal.net/2014/04/gcc-linux-gnuxxxh-no-such-file-or.html
 ---
 
-<div dir="ltr" style="text-align: left;" trbidi="on">It can happen a lot when you receive a compiler error alerting for instance: "gnu/stubs-32.h: No such file"<br />The best you can do is just:<br /><pre style="margin: 0em;">$ yum whatprovides *stubs-32.h<br /># yum install $RESULT</pre><pre style="margin: 0em;">&nbsp;</pre></div>
+
+It can happen a lot when you receive a compiler error alerting for instance: `gnu/stubs-32.h: No such file`  
+The best you can do is just:  
+```
+yum whatprovides *stubs-32.h  
+yum install $RESULT
+```
