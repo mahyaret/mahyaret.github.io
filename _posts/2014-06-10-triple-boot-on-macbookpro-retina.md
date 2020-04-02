@@ -13,7 +13,7 @@ blogger_orig_url: http://www.etedal.net/2014/06/triple-boot-on-macbookpro-retina
 
 If you want to have Windows and Ubuntu alongside your Mac OS on your MacBookPro you should be aware of the followings:  
 The only Linux distribution which has a built-in support for Mac hardware is Ubuntu. For example after installing Fedora in addition to resolution problem your wireless network card won't work initially.  
-According to my experience you should first install Windows and then Linux. In order to install Windows it is better to use the Apple Boot Camp which automatically downloads and attache software and drivers to the Windows image and makes a bootable Windows USB for you.  
+According to my experience you should **first install Windows and then Linux**. In order to install Windows it is better to use the Apple Boot Camp which automatically downloads and attache software and drivers to the Windows image and makes a bootable Windows USB for you.  
 By using Disk Utility a exFAT partition for Windows and keep the remaining as free space for Linux.  
 If you want just Windows alongside Mac you can restart your mac then press "option" key and then install Windows. However this doesn't work fork triple scenario then you need to install another program called `rEFInd`.  
   
