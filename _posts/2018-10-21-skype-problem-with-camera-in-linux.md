@@ -11,4 +11,16 @@ blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-757097935233302519
 blogger_orig_url: http://www.etedal.net/2018/10/skype-problem-with-camera-in-linux.html
 ---
 
-Suppose your webcam is in /dev/video0.<br /><br /><br />1. sudo apt-get install v4l2loopback-dkms<br /><br />2. sudo modprobe v4l2loopback<br /><br />3. Finally, when you need your webcam on Skype, just run this command:<br /><br />&nbsp;&nbsp;&nbsp; ffmpeg -i /dev/video0 -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video1<br />
+
+Suppose your webcam is in `/dev/video0`.  
+  
+  
+1. `sudo apt-get install v4l2loopback-dkms`  
+  
+2. `sudo modprobe v4l2loopback`  
+  
+3. Finally, when you need your webcam on Skype, just run this command:  
+  
+  ```
+    ffmpeg -i /dev/video0 -vcodec rawvideo -pix\_fmt yuv420p -threads 0 -f v4l2 /dev/video1
+  ```  
