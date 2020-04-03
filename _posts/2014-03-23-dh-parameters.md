@@ -11,7 +11,8 @@ blogger_id: tag:blogger.com,1999:blog-727803219276813688.post-138544653334753054
 blogger_orig_url: http://www.etedal.net/2014/03/dh-parameters.html
 ---
 
-\[ \frac{1}{n^{2}} \]
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 ###   There are a few rules to consider in choosing the coordinate system:
 
 1.  the $z$-axis is in the direction of the joint axis
