@@ -1,3 +1,15 @@
+---
+layout: post
+title: PyBullet
+date: '2020-04-08T19:00:00.002-04:00'
+author: Mahyar
+tags:
+- PyBullet
+- Robotics
+- Python
+- Reinforcement Learning
+---
+
 <p align="center">
 <img src="/img/panda.gif" height="500">
 </p>
