@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PyBullet
+title: PyBullet Tutorial
 date: '2020-04-08T19:00:00.002-04:00'
 author: Mahyar
 tags:
@@ -9,6 +9,8 @@ tags:
 - Python
 - Reinforcement Learning
 ---
+
+Many of the standard environments for evaluating continuous control reinforcement learning algorithms are built on the MuJoCo physics engine, a paid and licensed software. Bullet Physics provides a free and open source alternative to physics simulation with OpenAI Gym offering a set of environments built upon it.
 
 <p align="center">
 <img src="/img/panda.gif" height="500">
