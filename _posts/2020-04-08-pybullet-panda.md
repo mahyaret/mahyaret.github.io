@@ -1,5 +1,5 @@
 <p align="center">
-<img src="img/panda.gif" height="500">
+<img src="/img/panda.gif" height="500">
 </p>
 
 pybullet is a simple Python interface to the physics engine [Bullet](http://bulletphysics.org/wordpress/). It is easy to install (via `pip install pybullet`) and use and it is yet a powerful tool. This article will give a brief glimpse at what you can do with it. A more detailed guide can be found in the [pybullet quickstart guide](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/). A great overview of the new features of Bullet 2.89 can be found [here](https://github.com/bulletphysics/bullet3/releases/tag/2.89). It might become the de facto standard simulation environment for reinforcement learning in the next years.
