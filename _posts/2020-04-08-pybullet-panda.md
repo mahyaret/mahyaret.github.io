@@ -75,7 +75,7 @@ Another point is that if you run the code the robot jumps to the target position
 ```
 p.configureDebugVisualizer(p.COV_ENABLE_SINGLE_STEP_RENDERING) 
 ```
-Now, we are ready to pick up the object! I implemented the grasping process using different states. First state (`current_state == 0`) is posing over the object and opening the fingers. Next (`current_state == 1`) is going down at the object level. Then (`current_state == 2`), closing the fingers. Finally (`current_state == 0`), picking up the object. Each of these states assumes to have `1` unit duration. We define each step to take `control_dt = 1./240.`. 
+Now, we are ready to pick up the object! I implemented the grasping process using different states. First state (`current_state == 0`) is posing over the object and opening the fingers. Next (`current_state == 1`) is going down at the object level. Then (`current_state == 2`), closing the fingers. Finally (`current_state == 0`), picking up the object. Each of these states assumes to have `1` unit duration. We are going to repeat these steps over and over again. We define each step to take `control_dt = 1./240.`. 
 
 The following is what the complete code looks like:
 ```
@@ -149,7 +149,7 @@ while True:
     p.stepSimulation()
 ```
 
-Now we are ready to build a gym environment which I will explain in the next post.
+Now that we have learned the very basics of PyBullet, we are ready to build a gym environment which I will explain in the next post.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5OTI5MTE2OSwxNzI3OTY1NzY2XX0=
+eyJoaXN0b3J5IjpbLTExNTUyMjczMzgsMTcyNzk2NTc2Nl19
 -->
