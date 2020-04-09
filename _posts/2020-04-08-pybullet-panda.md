@@ -5,7 +5,7 @@ date: '2020-04-08T19:00:00.002-04:00'
 author: Mahyar
 tags:
 - PyBullet
-- Gym
+- OpenAI Gym
 - Robotics
 - Python
 - Reinforcement Learning
@@ -154,5 +154,5 @@ while True:
 
 Now that we have learned the very basics of PyBullet, we are ready to build a gym environment which I will explain in the next post.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMDc4NDA5Myw0NzMxNjI3NDFdfQ==
+eyJoaXN0b3J5IjpbLTE2NTg2NDk2ODksNDczMTYyNzQxXX0=
 -->
