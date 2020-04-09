@@ -57,7 +57,7 @@ I know I mentioned that I only write a code that we absolutely are going to need
 ```
 p.resetDebugVisualizerCamera(cameraDistance=1.5, cameraYaw=0, cameraPitch=-40, cameraTargetPosition=[0.55,-0.35,0.2])
 ```
-Now, we are ready to move the robot toward the object to grasp it.  `pybullet.setJointMotorControl2([objectUid],[jointIndex],[controller],[targetPosition])` will control the robot joints and move them. The joint index is based on what it is defined in the decription file (e.g. URDF.) For instance, the way Franka Emika Panda is defined in PyBullet, makes the fingers `joint 9` and `joint 10` and they are controlled separately. That is why if you take a look at `python -m pybullet_robots.panda.loadpanda_grasp` you will see a part for balancing these fingers to be cenetered. 
+Now, we are ready to move the robot toward the object to grasp it.  `pybullet.setJointMotorControl2([objectUid],[jointIndex],[controller],[targetPosition])` will control the robot joints and move them. The joint index is based on what it is defined in the decription file (e.g. URDF.) For instance, the way Franka Emika Panda is defined in PyBullet, it makes the fingers `joint 9` and `joint 10` and they are controlled separately. That is why if you take a look at `python -m pybullet_robots.panda.loadpanda_grasp` you will see a part for balancing these fingers to be cenetered. 
 
 The following positions the robot at the top of the object:
 ```
@@ -153,5 +153,5 @@ while True:
 
 Now that we have learned the very basics of PyBullet, we are ready to build a gym environment which I will explain in the next post.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODI3NDQxNF19
+eyJoaXN0b3J5IjpbNDczMTYyNzQxXX0=
 -->
