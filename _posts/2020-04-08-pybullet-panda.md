@@ -46,7 +46,7 @@ Now let's add a bin since we want to solve bin picking problem here.
 ```
 trayUid = p.loadURDF(os.path.join(urdfRootPath, "tray/traybox.urdf"),basePosition=[0.65,0,0])
 ```
-As I said all the available objects can be found under pybullet_data, there are also lots of random objects that can be used for grasping. Let's add one of them to the tray.
+As I said all the available objects can be found under `pybullet_data`, there are also lots of random objects that can be used for grasping. Let's add one of them to the tray.
 ```
 p.setGravity(0,0,-10)
 objectUid = p.loadURDF(os.path.join(urdfRootPath, "random_urdfs/000/000.urdf"), basePosition=[0.7,0,0.1])
@@ -151,5 +151,5 @@ while True:
 
 Now we are ready to build a gym environment which I will explain in the next post.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzk2NTc2Nl19
+eyJoaXN0b3J5IjpbLTE1NjQzMzE4MzgsMTcyNzk2NTc2Nl19
 -->
