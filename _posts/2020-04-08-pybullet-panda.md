@@ -151,6 +151,5 @@ while True:
 
 Now we are ready to build a gym environment which I will explain in the next post.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzk2NTc2NiwxMDQ2NzY1MjAyLDEwMj
-A5MzIyM119
+eyJoaXN0b3J5IjpbMTcyNzk2NTc2Nl19
 -->
