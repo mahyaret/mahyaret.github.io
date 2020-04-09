@@ -18,23 +18,17 @@ Many of the standard environments for evaluating continuous control reinforcemen
 
 PyBullet is a simple Python interface to the physics engine Bullet. It is easy to install (via `pip install pybullet`) and use and it is yet a powerful tool. This article will give a brief glimpse at what you can do with it. A more detailed guide can be found in the [pybullet quickstart guide](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/). A great overview of the new features of Bullet 2.89 can be found [here](https://github.com/bulletphysics/bullet3/releases/tag/2.89). It might become the de facto standard simulation environment for reinforcement learning in the next years.
 
-In this article, I want to create a simulation environment for robotic grasping. The environment consists of a manipulator (in this case [Franka Emika Panda](https://www.franka.de/technology).) I will do this step by step with including only absolutely essential elements. 
+In this article, I want to create a simulation environment for robotic grasping. In the next post I will turn it into a `gym` environment. The environment consists of a manipulator (in this case [Franka Emika Panda](https://www.franka.de/technology).) I will do this step by step with including only absolutely essential elements. 
 
 PyBullet can load kinematic descriptions of robots or other objects from [URDF](http://wiki.ros.org/urdf) files.  There are many tools that support URDF, for example, inverse kinematics solvers, visualization tools, etc. Other supported formats are Bullet's own format, Gazebo's SDF, and MuJoCo's MJCF files. These support multiple objects and allow you to load entire simulation scenarios at once. PyBullet also comes with some objects that are often useful, for finding the available components in PyBullet, you should look into `pybullet_data`. First let's add a robot to the environment. 
 ```
-import os, inspect
-
-currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-parentdir = os.path.dirname(os.path.dirname(currentdir))
-os.sys.path.insert(0, parentdir)
-
+import os
 import pybullet as p
 import pybullet_data
 
 
 p.connect(p.GUI)
-urdfRootPath=pybullet_data.getDataPath()
-pandaUid = p.loadURDF(os.path.join(urdfRootPath, "franka_panda/panda.urdf"),useFixedBase=True)
+pandaUid = p.loadURDF(os.path.join(pybullet_data.getDataPath(), "franka_panda/panda.urdf"),useFixedBase=True)
 
 while True:
     p.stepSimulation()
@@ -78,18 +72,14 @@ Another point is that if you run the code the robot jumps to the target position
 ```
 p.configureDebugVisualizer(p.COV_ENABLE_SINGLE_STEP_RENDERING,1) 
 ```
-Now, we are ready to pick up the object! I implemented the grasping process using different states. First state (`current_state == 0`) is posing over the object and opening the fingers. Next (`current_state == 1`) is going down at the object level. Then (`current_state == 2`), closing the fingers. Finally (`current_state == 0`), picking up the object. Each of these states assumes to have `1` unit duration. We define each step to take `control_dt = 1./240.`.
+Now, we are ready to pick up the object! I implemented the grasping process using different states. First state (`current_state == 0`) is posing over the object and opening the fingers. Next (`current_state == 1`) is going down at the object level. Then (`current_state == 2`), closing the fingers. Finally (`current_state == 0`), picking up the object. Each of these states assumes to have `1` unit duration. We define each step to take `control_dt = 1./240.`. 
+
+The following is what the complete code looks like:
 ```
-import os, inspect
-
-currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-
-parentdir = os.path.dirname(os.path.dirname(currentdir))
-os.sys.path.insert(0, parentdir)
-
+import os
 import pybullet as p
 import pybullet_data
-
+import math
 
 p.connect(p.GUI)
 urdfRootPath=pybullet_data.getDataPath()
@@ -157,3 +147,6 @@ while True:
 ```
 
 Now we are ready to build a gym environment which I will explain in the next post.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTAyMDkzMjIzXX0=
+-->
