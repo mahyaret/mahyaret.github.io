@@ -51,7 +51,7 @@ As I said all the available objects can be found under `pybullet_data`, there ar
 p.setGravity(0,0,-10)
 objectUid = p.loadURDF(os.path.join(urdfRootPath, "random_urdfs/000/000.urdf"), basePosition=[0.7,0,0.1])
 ```
-I have added the object from a height since I also added gravity so that the object will fall into the tray.
+I have added the object from a height. I also added gravity so that the object will fall into the tray.
 
 I know I mentioned that I only write a code that we absolutely are going to need but the following is a bit necessary as it changes the initial view of the environment. Instead of starting from far away from the environment, the simulation starts from a close angle.
 ```
@@ -69,11 +69,11 @@ p.setJointMotorControl2(pandaUid, 6, p.POSITION_CONTROL,-math.pi/4.)
 p.setJointMotorControl2(pandaUid, 9, p.POSITION_CONTROL, 0.04)
 p.setJointMotorControl2(pandaUid, 10, p.POSITION_CONTROL, 0.04)
 ```
-Putting this piece of code either in the `while` loop or before it positions the robot right on top of the objects and opens the gripper fingers (joint 9 and joint 10.) Here, we did not use any fancy inverse-kinematic capability of `PyBullet` and sent only joint command to the robot. This is something that I will cover in future.
+Putting this piece of code either in the `while` loop or before it positions the robot right on top of the objects and opens the gripper fingers (joint 9 and joint 10.) Here, we did not use any fancy inverse-kinematic capability of PyBullet and sent only joint command to the robot. This is something that I will cover in future.
 
 Another point is that if you run the code the robot jumps to the target position and there is no smooth simulation rendering. For the sake of better demonstration we can render the simulation in each step by adding the following to the `while` loop:
 ```
-p.configureDebugVisualizer(p.COV_ENABLE_SINGLE_STEP_RENDERING,1) 
+p.configureDebugVisualizer(p.COV_ENABLE_SINGLE_STEP_RENDERING) 
 ```
 Now, we are ready to pick up the object! I implemented the grasping process using different states. First state (`current_state == 0`) is posing over the object and opening the fingers. Next (`current_state == 1`) is going down at the object level. Then (`current_state == 2`), closing the fingers. Finally (`current_state == 0`), picking up the object. Each of these states assumes to have `1` unit duration. We define each step to take `control_dt = 1./240.`. 
 
@@ -151,5 +151,5 @@ while True:
 
 Now we are ready to build a gym environment which I will explain in the next post.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjQzMzE4MzgsMTcyNzk2NTc2Nl19
+eyJoaXN0b3J5IjpbMTI5OTI5MTE2OSwxNzI3OTY1NzY2XX0=
 -->
