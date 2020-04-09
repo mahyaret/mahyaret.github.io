@@ -20,12 +20,11 @@ PyBullet is a simple Python interface to the physics engine Bullet. It is easy t
 
 In this article, I want to create a simulation environment for robotic grasping. In the next post I will turn it into a `gym` environment. The environment consists of a manipulator (in this case [Franka Emika Panda](https://www.franka.de/technology).) I will do this step by step with including only absolutely essential elements. 
 
-PyBullet can load kinematic descriptions of robots or other objects from [URDF](http://wiki.ros.org/urdf) files.  There are many tools that support URDF, for example, inverse kinematics solvers, visualization tools, etc. Other supported formats are Bullet's own format, Gazebo's SDF, and MuJoCo's MJCF files. These support multiple objects and allow you to load entire simulation scenarios at once. PyBullet also comes with some objects that are often useful, for finding the available components in PyBullet, you should look into `pybullet_data`. First let's add a robot to the environment. 
+PyBullet can load kinematic descriptions of robots or other objects from [URDF](http://wiki.ros.org/urdf) files.  There are many tools that support URDF, for example, inverse kinematics solvers, visualization tools, etc. Other supported formats are Bullet's own format, Gazebo's SDF, and MuJoCo's MJCF files. These support multiple objects and allow you to load entire simulation scenarios at once. PyBullet also comes with some objects that are often useful, for finding the available components in PyBullet, you should look into `pybullet_data`. First let's add a robot to the environment. We would need `os` for 
 ```
 import os
 import pybullet as p
 import pybullet_data
-
 
 p.connect(p.GUI)
 pandaUid = p.loadURDF(os.path.join(pybullet_data.getDataPath(), "franka_panda/panda.urdf"),useFixedBase=True)
@@ -148,5 +147,5 @@ while True:
 
 Now we are ready to build a gym environment which I will explain in the next post.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMDkzMjIzXX0=
+eyJoaXN0b3J5IjpbMTYwMzI0NzAxNywxMDIwOTMyMjNdfQ==
 -->
