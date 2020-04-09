@@ -14,7 +14,7 @@ Many of the standard environments for evaluating continuous control reinforcemen
 
 PyBullet is a simple Python interface to the physics engine Bullet. It is easy to install (via `pip install pybullet`) and use and it is yet a powerful tool. This article will give a brief glimpse at what you can do with it. A more detailed guide can be found in the [pybullet quickstart guide](https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/). A great overview of the new features of Bullet 2.89 can be found [here](https://github.com/bulletphysics/bullet3/releases/tag/2.89). It might become the de facto standard simulation environment for reinforcement learning in the next years.
 
-In this part, I will give a very basic introduction to PyBullet and in the next post I'll make a OpenAI Gym Environment. Here, I want to create a simulation environment for robotic grasping. In the next post I will turn it into a `gym` environment. The environment consists of a manipulator (in this case [Franka Emika Panda](https://www.franka.de/technology).) I will do this step by step with including only absolutely essential elements. 
+In this part, I will give a very basic introduction to PyBullet and in the next post I'll explain how to create an OpenAI Gym Environment using PyBullet. Here, I want to create a simulation environment for robotic grasping. In the next post I will turn it into a `gym` environment. The environment consists of a manipulator (in this case [Franka Emika Panda](https://www.franka.de/technology).) I will do this step by step with including only absolutely essential elements. 
 
 <p align="center">
 <img src="/img/panda.gif" height="500">
@@ -151,5 +151,5 @@ while True:
 
 Now that we have learned the very basics of PyBullet, we are ready to build a gym environment which I will explain in the next post.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MTU4NzM4MSwxNzI3OTY1NzY2XX0=
+eyJoaXN0b3J5IjpbLTY4MDE3MDM5NCwxNzI3OTY1NzY2XX0=
 -->
