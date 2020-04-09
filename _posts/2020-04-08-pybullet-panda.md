@@ -57,7 +57,9 @@ I know I mentioned that I only write a code that we absolutely are going to need
 ```
 p.resetDebugVisualizerCamera(cameraDistance=1.5, cameraYaw=0, cameraPitch=-40, cameraTargetPosition=[0.55,-0.35,0.2])
 ```
-Now, we are ready to move the robot toward the object to grasp it.  `pybullet.setJointMotorControl2([objectUid],[jointIndex],[controller],[targetPosition])` will control the robot joints and move them. The joint index is based on what it is defined in the decription file (e.g. URDF.) For instance, the way Franka Emika Panda is defined in PyBullet, makes the fingers `joint 9` and `joint 10` and they are controlled separately. That is why if you take a look at `python -m pybullet_robots.panda.loadpanda_grasp` you will see a part for balancing these fingers to be cenetered. The following positions the robot at the top of the object:
+Now, we are ready to move the robot toward the object to grasp it.  `pybullet.setJointMotorControl2([objectUid],[jointIndex],[controller],[targetPosition])` will control the robot joints and move them. The joint index is based on what it is defined in the decription file (e.g. URDF.) For instance, the way Franka Emika Panda is defined in PyBullet, makes the fingers `joint 9` and `joint 10` and they are controlled separately. That is why if you take a look at `python -m pybullet_robots.panda.loadpanda_grasp` you will see a part for balancing these fingers to be cenetered. 
+
+The following positions the robot at the top of the object:
 ```
 p.setJointMotorControl2(pandaUid, 0, p.POSITION_CONTROL,0)
 p.setJointMotorControl2(pandaUid, 1, p.POSITION_CONTROL,math.pi/4.)
@@ -75,7 +77,7 @@ Another point is that if you run the code the robot jumps to the target position
 ```
 p.configureDebugVisualizer(p.COV_ENABLE_SINGLE_STEP_RENDERING) 
 ```
-Now, we are ready to pick up the object! I implemented the grasping process using different states. First state (`current_state == 0`) is posing over the object and opening the fingers. Next (`current_state == 1`) is going down at the object level. Then (`current_state == 2`), closing the fingers. Finally (`current_state == 0`), picking up the object. Each of these states assumes to have `1` unit duration. We are going to repeat these steps over and over again. We define each step to take `control_dt = 1./240.`. 
+Now, we are ready to pick up the object! I implemented the grasping process using different states. First state (`current_state == 0`) is posing over the object and opening the fingers. Next (`current_state == 1`) is going down at the object level. Then (`current_state == 2`), closing the fingers. Finally (`current_state == 0`), picking up the object. Each of these states assumes to have `1` unit duration. We are going to repeat these steps over and over again. We define each step to take `control_dt = 1./240.` using `pybullet.setTimeStep`. 
 
 The following is what the complete code looks like:
 ```
@@ -151,5 +153,6 @@ while True:
 
 Now that we have learned the very basics of PyBullet, we are ready to build a gym environment which I will explain in the next post.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNDQyNjMyMCwtMTcyOTIwNDMwNV19
+eyJoaXN0b3J5IjpbLTE3MzM1NTc5MzgsLTE3MjkyMDQzMDVdfQ
+==
 -->
