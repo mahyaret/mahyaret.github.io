@@ -35,7 +35,7 @@ while True:
 let's name this file `test.py` and run it by `python test.py` which results the following:
 
 <p align="center">
-<img src="/img/panda.gif" height="500">
+<img src="/img/pybullet" height="500">
 </p>
 
 Now let's put this robot on a table. Add the following to your code right after loading the robot.
@@ -151,5 +151,6 @@ while True:
 
 Now we are ready to build a gym environment which I will explain in the next post.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0Njc2NTIwMiwxMDIwOTMyMjNdfQ==
+eyJoaXN0b3J5IjpbLTE1NDc4MTUwNzksMTA0Njc2NTIwMiwxMD
+IwOTMyMjNdfQ==
 -->
