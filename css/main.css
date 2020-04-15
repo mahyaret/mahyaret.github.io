@@ -9,6 +9,7 @@ layout: null
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
+  text-align: justify; // add this line
   color: #404040;
   position: relative;
   background-color: {{ site.page-col }};
@@ -335,6 +336,7 @@ footer .theme-by {
 }
 
 .post-preview .post-title {
+  text-align: left; // add this line
   font-size: 30px;
   margin-top: 0;
 }
