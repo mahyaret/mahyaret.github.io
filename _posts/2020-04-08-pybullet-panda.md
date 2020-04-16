@@ -18,7 +18,7 @@ PyBullet is a simple Python interface to the physics engine Bullet. It is easy t
 In this part, I will give a very basic introduction to PyBullet and in the next post I'll explain how to create an OpenAI Gym Environment using PyBullet. Here, I want to create a simulation environment for robotic grasping. The environment consists of a manipulator (in this case [Franka Emika Panda](https://www.franka.de/technology).) I will do this step by step with including only absolutely essential elements. 
 
 <p align="center">
-<img src="/img/2020/panda.gif" height="500">
+<img src="/img/panda.gif" height="500">
 </p>
 
 PyBullet can load kinematic descriptions of robots or other objects from [URDF](http://wiki.ros.org/urdf) files.  There are many tools that support URDF, for example, inverse kinematics solvers, visualization tools, etc. Other supported formats are Bullet's own format, Gazebo's SDF, and MuJoCo's MJCF files. These support multiple objects and allow you to load entire simulation scenarios at once. PyBullet also comes with some objects that are often useful, for finding the available components in PyBullet, you should look into `pybullet_data`. First let's add a robot to the environment. We would need `os` for creating path for finding the objects that we want to add to the environment. `pybullet.connect(pybullet.GUI)` starts the simulation graphical user interface. `pybullet.stepSimulation()` runs one step of the simulation. 
@@ -36,7 +36,7 @@ while True:
 let's name this file `test.py` and run it by `python test.py` which results the following:
 
 <p align="center">
-<img src="/img/2020/pybullet_gui.png" height="500">
+<img src="/img/pybullet_gui.png" height="500">
 </p>
 
 Now let's put this robot on a table. Add the following to your code right after loading the robot.
