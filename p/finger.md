@@ -3,6 +3,14 @@ layout: page
 title: Robotic Finger
 permalink: /p/finger.html
 ---
+
+June 6/2018: Underactuated Finger
+------------------------
+
+Mehrdad R. Kermani and I published the details of the Underactuated Finger design in IEEE/ASME Transactions on Mechatronics, "Grasp and Stress Analysis of an Underactuated Finger for Proprioceptive Tactile Sensing,"  ([Access](https://ieeexplore.ieee.org/abstract/document/8373740/)).
+
+* * *
+
 February 28/2018: ROS package for the finger is released on GitHub!
 --------------------
 

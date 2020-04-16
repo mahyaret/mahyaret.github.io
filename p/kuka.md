@@ -3,9 +3,11 @@ layout: page
 title: Kuka Robots
 permalink: /p/kuka.html
 ---
+
+
 April 15/2020: KUKA Reinforcement Learning
 ------------------------------------------
-I have released simple implementations of Deep Q Learning (DQN) and Proximal Policy Optimization (PPO) using PyTorch, PyBullet and OpenAI Gym. The code can be found [here](https://github.com/mahyaret/kuka_r)
+I have released simple implementations of Deep Q Learning (DQN) and Proximal Policy Optimization (PPO) using PyTorch, PyBullet and OpenAI Gym. The code can be found [here](https://github.com/mahyaret/kuka_r).
 <p align="center">
 <img src="/img/kuka/kuka.gif" height="300">
 </p>
@@ -13,6 +15,12 @@ I have released simple implementations of Deep Q Learning (DQN) and Proximal Pol
 
 * * *
 
+November 1/2019: KUKA User Interface
+------------------------------
+
+Mehrdad R. Kermani and I published the details of the KUI software in CIRP Journal of Manufacturing Science and Technology, "An Integration Platform for Multiple Modules and Kuka Robots,"  ([Access](https://www.sciencedirect.com/science/article/abs/pii/S1755581719300355)). 
+
+* * *
 
 Aug 30/2017: Open-source KUKA User Interface
 --------------------------------------------
