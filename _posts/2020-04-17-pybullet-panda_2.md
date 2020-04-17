@@ -192,11 +192,13 @@ If you are interested to publish your environment on PyPI for other researchers 
 * Create a new account on [PyPI](https://pypi.org/)
 
 * Setup the following packages:
+
   ```sh
   pip install setuptools wheel twine
   ```
   
 * For creating a new repo called gym-foo, It should have at least the following files:
+
   ```sh
   gym-foo/
     README.md
@@ -220,6 +222,7 @@ If you are interested to publish your environment on PyPI for other researchers 
   ```
 
 * `gym-foo/gym_foo/__init__.py` should have:
+
   ```python
   from gym.envs.registration import register
 
@@ -230,12 +233,14 @@ If you are interested to publish your environment on PyPI for other researchers 
   ```
 
 * `gym-foo/gym_foo/envs/__init__.py` should have:
+
   ```python
   from gym_foo.envs.foo_env import FooEnv
   from gym_foo.envs.foo_extrahard_env import FooExtraHardEnv
   ```
 
 * `gym-foo/gym_foo/envs/foo_env.py` should look something like:
+
   ```python
   import gym
   from gym import error, spaces, utils
@@ -255,12 +260,15 @@ If you are interested to publish your environment on PyPI for other researchers 
     def close(self):
       ...
   ```
+  
 * Make source and build distributions: 
+
   ```sh
   python setup.py sdist bdist_wheel
   ```
 
 * Upload the package to PyPI:
+
   ```sh
     twine upload dist/*
     ```
