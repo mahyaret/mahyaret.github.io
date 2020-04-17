@@ -10,7 +10,7 @@ tags:
 - Python
 - Reinforcement Learning
 ---
-# Why creating an environment for Gym
+# Why creating an environment for Gym?
  OpenAI Gym is the de facto toolkit for reinforcement learning research. Researchers use Gym to compare their algorithms for its growing collection of benchmark problems that expose a common interface. Two important design decisions have been made for this common interface:
  1. Two core concepts in RL are the agent and the environment. Gym has chosen to only provide an abstraction for the environment, not for the agent.
  2. The performance of an RL algorithm on an environment can be measured in two ways: first, the final performance; second, the amount of time it takes to learn -- the sample complexity. Gym provides the abstraction for logging both of them about the agent's performance. It can be written in a file, with even a video recording of the agent in action.
@@ -185,7 +185,7 @@ Now we should be able to also close the environment:
 
 Ok, we are done. I have published the code [here on GitHub](https://github.com/mahyaret/gym-panda). Now, let's publish and install our Gym environment.
 
-# How to publish the new environment for Gym
+# How to publish the new environment for Gym?
 
 If you are interested to publish your environment on PyPI for other researchers to be able to test their algorithms on you environment you should do the following steps:
 
