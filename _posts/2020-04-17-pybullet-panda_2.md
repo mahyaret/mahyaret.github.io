@@ -213,11 +213,17 @@ If you are interested to publish your environment on PyPI for other researchers 
 * `gym-foo/setup.py` should have:
 
   ```python
-  from setuptools import setup
+  import setuptools
+  from pathlib import Path
 
-  setup(name='gym_foo',
-        version='0.0.1',
-        install_requires=['gym']  # And any other dependencies foo needs
+  setuptools.setup(
+      name='gym_foo',
+      version='0.0.1',
+      description="A OpenAI Gym Env for foo",
+      long_description=Path("README.md").read_text(),
+      long_description_content_type="text/markdown",
+      packages=setuptools.find_packages(include="gym_foo*"),
+      install_requires=['gym']  # And any other dependencies foo needs
   )
   ```
 
