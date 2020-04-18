@@ -332,10 +332,6 @@ The environment’s `step()` function returns exactly what we need. In fact, `st
 
 This is just an implementation of the classic “agent-environment loop”. Each timestep, the agent chooses an `action`, and the environment returns an `observation` and a `reward`.
 
-<p align="center">
-![](http://gym.openai.com/assets/docs/aeloop-138c89d44114492fd02822303e6b4b07213010bb14ca5856d2d49d6b62d88e53.svg)
-</p>
-
 The process gets started by calling `reset()`, which returns an initial `observation`. So a more proper way of writing the previous code would be to respect the `done` flag:
 
 ```
