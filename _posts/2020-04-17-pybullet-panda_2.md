@@ -269,8 +269,8 @@ If you are interested to publish your environment on PyPI for other researchers 
 * Upload the package to PyPI:
 
   ```sh
-    twine upload dist/*
-    ```
+  twine upload dist/*
+  ```
     use your PyPI username and password.
 
 * You can install your package with `pip install -e gym-foo` locally or if you have uploaded it to PyPI you can install it with `pip install gym-foo`, then you can create an instance of the environment with `gym.make('gym_foo:foo-v0')`
