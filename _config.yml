@@ -25,8 +25,8 @@ navbar-links:
     - Robotic Finger: "p/finger.html"
     - Kuka Robots: "p/kuka.html"
     - PhD & MSc Research: "p/research.html"
-    - Publications: "p/pubs.html"
-  Resume & Portfolio: "p/resume.html"
+  #  - Publications: "p/pubs.html"
+  CV: "p/resume.html"
   Archive: 
     - Years: "years"
     - Tags: "tags"
