@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Resume & Portfolio
+title: CV
 permalink: /p/resume.html
 ---
 Education
