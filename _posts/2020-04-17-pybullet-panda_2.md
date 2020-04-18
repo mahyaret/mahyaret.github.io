@@ -73,7 +73,7 @@ class PandaEnv(gym.Env):
 
 First, we need to initialize the environment. I choose to connect to PyBullet using GUI (`pybullet.connect(p.GUI)`.) Then, I adjust the view angle of the environment using `p.resetDebugVisualizerCamera()`. 
 
-Every environment comes with an `action_space` and an `observation_space`. These attributes are of type [`Space`](https://github.com/openai/gym/blob/master/gym/core.py), and they describe the format of valid actions and observations. Our environment is going to have continuous action and observation space.  The [`Box`](https://github.com/openai/gym/blob/master/gym/spaces/box.py) space represents an `n`-dimensional box. We are going to read the joint variables of each fingers (there are two fingers) as well as the Cartesian position of the end-effector (since, I assume the gripper is always downward for simplicity, we don't need the orientation here), so valid `observations` will be an array of 5 numbers. I also choose the `actions` to be the target Cartesian position of the end-effector and a joint variable for both fingers which will be an array of 4 numbers. Again for simplicity, I am not considering the orientation since I am assuming the gripper is downward with $$90\degree$$ angle.  `Box` and `Discrete` are the most common `Space`s in Gym. You can sample from a `Space` or check that something belongs to it. `action_space` and an `observation_space` can be defined using `spaces.Box()`. Finally, The initialization of the environment will be:
+Every environment comes with an `action_space` and an `observation_space`. These attributes are of type [`Space`](https://github.com/openai/gym/blob/master/gym/core.py), and they describe the format of valid actions and observations. Our environment is going to have continuous action and observation space.  The [`Box`](https://github.com/openai/gym/blob/master/gym/spaces/box.py) space represents an `n`-dimensional box. We are going to read the joint variables of each fingers (there are two fingers) as well as the Cartesian position of the end-effector (since, I assume the gripper is always downward for simplicity, we don't need the orientation here), so valid `observations` will be an array of 5 numbers. I also choose the `actions` to be the target Cartesian position of the end-effector and a joint variable for both fingers which will be an array of 4 numbers. Again for simplicity, I am not considering the orientation since I am assuming the gripper is downward with $$90^\circ$$ angle.  `Box` and `Discrete` are the most common `Space`s in Gym. You can sample from a `Space` or check that something belongs to it. The `action_space` and `observation_space` can be defined using `spaces.Box()`. Finally, The initialization of the environment will be:
 ```python
 def __init__(self):
         p.connect(p.GUI)
@@ -82,7 +82,7 @@ def __init__(self):
         self.observation_space = spaces.Box(np.array([-1]*5), np.array([1]*5))
  ```
 
-Now let's look at the `reset()` function. In this function we use `pybullet.resetSimulation()` to reset the PyBullet environment. Then we add gravity using `pybullet.Gravity()`.  Next is adding the each component of the environment: ground, robot, table, tray, object using `pybullet.loadURDF()`. In each environment `reset` the object is randomly is placed in the bin using `random.uniform()`. We can call `pybullet.resetJointState()` for each joint to place each joint of the robot in a desired initial pose (`rest_poses`.) The pose (position and orientation) of the end-effector of the robot can be read using `pybullet.getLinkState()`. We are interested in `pybullet.getLinkState()[0]` since we don't care about the orientation of the gripper. The way Franka Emika Panda robot is defined in URDF file the index for its end-effector is `11` which is needed for the `pybullet.getLinkState()` function. Joint variables of the fingers can be read using  `pybullet.getJointState()`. Each finger has an index and these indices are `9` and `10`. Each finger can be observed and controlled separately in the simulation environment. We can read the joint variable of each finger separately, however, for the sake of simplicity, we consider only one `action` item for controlling both of them. Finally, we combine `state_robot` (the position of the gripper/end-effector) and  `state_fingers` (the joint variable for each finger) into `observation` and return it. This is how it looks like:
+Now let's look at the `reset()` function. In this function we use `pybullet.resetSimulation()` to reset the PyBullet environment. Then we add gravity using `pybullet.Gravity()`.  Next is adding the each component of the environment: ground, robot, table, tray, and object using `pybullet.loadURDF()`. In each `reset()` call the object is randomly placed in the bin using `random.uniform()`. We can call `pybullet.resetJointState()` for each joint to place each joint of the robot in a desired initial pose (`rest_poses`.) The pose (position and orientation) of the end-effector of the robot can be read using `pybullet.getLinkState()`. We are interested in `pybullet.getLinkState()[0]` since we don't care about the orientation of the gripper. The way Franka Emika Panda robot is defined in URDF file the index for its end-effector is `11` which is needed for the `pybullet.getLinkState()` function. Joint variables of the fingers can be read using  `pybullet.getJointState()`. Each finger has an index and these indices are `9` and `10`. Each finger can be observed and controlled separately in the simulation environment. We can read the joint variable of each finger separately, however, for the sake of simplicity, we consider only one `action` item for controlling both of them. Finally, we combine `state_robot` (the position of the gripper/end-effector) and  `state_fingers` (the joint variable for each finger) into `observation` and return it. This is how it looks like:
 
 ```python
 def reset(self):
@@ -110,9 +110,9 @@ def reset(self):
         return observation
  ```
  
-Now we are ready to determine what will happen with each `env.step(action)` command. As I mentioned before the actions are the Cartesian position of the gripper plus a joint variable for both fingers. I am going to use  `pybullet.calculateInverseKinematics()` for calculating target joint variables for the robot. However, we gradually move the robot toward the desired Cartesian position using a variable called `dv` for smoother inverse kinematics output.  `p.configureDebugVisualizer(p.COV_ENABLE_SINGLE_STEP_RENDERING)` for better rendering. For the sake of simplicity, the gripper orientation is considered to be perpendicular to the ground. I have converted the angles to Quaternion variables using `pybullet.getQuaternionFromEuler()`. In each step, I read the current Cartesian position (`pybullet.getLinkState()`) of the gripper and add the small variation toward the target Cartesian position, then calculate the joint variables for reaching to that new Cartesian position ( `pybullet.calculateInverseKinematics()`), then I apply those joint variable using `pybullet.setJointMotorControl2()`. After attempting to interact with the environment we run the environment for one time step (`pybullet.stepSimulation()`.) Then, I read the state of object, robot gripper and its fingers. I return the gripper and its fingers state as the observation but pass the state of the object as a diagnostic information useful for debugging. It can sometimes be useful for learning. However, official evaluations of your agent are not allowed to use this for learning since it's cheating!
+Now we are ready to determine what will happen with each `env.step(action)` command. As I mentioned before the actions are the Cartesian position of the gripper plus a joint variable for both fingers. I am going to use  `pybullet.calculateInverseKinematics()` for calculating target joint variables for the robot. However, we gradually move the robot toward the desired Cartesian position using a variable called `dv` for smoother inverse kinematics output.  `p.configureDebugVisualizer(p.COV_ENABLE_SINGLE_STEP_RENDERING)` is also used for better rendering. For the sake of simplicity, the gripper orientation is considered to be perpendicular to the ground. I have converted the angles to Quaternion variables using `pybullet.getQuaternionFromEuler()`. In each step, I read the current Cartesian position (`pybullet.getLinkState()`) of the gripper and add the small variation toward the target Cartesian position, then calculate the joint variables for reaching to that new Cartesian position ( `pybullet.calculateInverseKinematics()`), then I apply those joint variable using `pybullet.setJointMotorControl2()`. After attempting to interact with the environment we run the environment for one time step (`pybullet.stepSimulation()`.) Then, I read the state of object, robot gripper and its fingers. I return the gripper and its fingers state as the observation but pass the state of the object as a diagnostic information useful for debugging. It can sometimes be useful for learning. However, official evaluations of your agent are not allowed to use this for learning since it's cheating!
 
-In the `step` function we also determine the `reward` and if the episode is `done`. They way I calculated the reward here is that, if the robot grasp the object and pick it up to a certain height (`0.45`) the agent gets `1` reward and the episode is `done`. This is how the final `step` function looks like:  
+In the `step()` function we also determine the `reward` and if the episode is `done`. They way I calculated the reward here is that, if the robot grasp the object and pick it up to a certain height (`0.45`) the agent gets `1` reward and the episode is `done`. This is how the final `step()` function looks like:  
 
 ```python
 def step(self, action):
@@ -152,7 +152,7 @@ def step(self, action):
         observation = state_robot + state_fingers
         return observation, reward, done, info
    ```
-As I said reading the object status directly from the environment can be considered as cheating. Most probably, we want a vision system, for instance, gives us the position and orientation of the object using a camera mounted in the environment. So let's add that! Before applying each `step` we `render` the camera output and possibly feed it into a Neural Network (NN) which outputs the pose of the object. So we write a `render` function in which we place the camera at a desired position and orientation in the environment using `pybullet.computeViewMatrixFromYawPitchRoll()`. Then, in order to get the camera image using `pybullet.getCameraImage()` we need to calculate `view_matrix` and `proj_matrix` the outputs of  `p.computeViewMatrixFromYawPitchRoll()` and `p.computeProjectionMatrixFOV()`, respectively. This is how the final `render` function will look like:
+As I said reading the object status directly from the environment is not practical. Most probably, we want a vision system, for instance, gives us the position and orientation of the object using a camera mounted in the environment. So let's add that! Before applying each `step()` we `render()` the camera output and possibly feed it into a Neural Network (NN) which outputs the pose of the object. So we write a `render()` function in which we place the camera at a desired position and orientation in the environment using `pybullet.computeViewMatrixFromYawPitchRoll()`. Then, in order to get the camera image using `pybullet.getCameraImage()` we need to calculate `view_matrix` and `proj_matrix` which are the outputs of  `p.computeViewMatrixFromYawPitchRoll()` and `p.computeProjectionMatrixFOV()`, respectively. This is how the final `render()` function will look like:
 ```python
 def render(self, mode='human'):
         view_matrix = p.computeViewMatrixFromYawPitchRoll(cameraTargetPosition=[0.7,0,0.05],
@@ -183,7 +183,7 @@ Now we should be able to also close the environment:
         p.disconnect()
 ```
 
-Ok, we are done. I have published the code [here on GitHub](https://github.com/mahyaret/gym-panda). Now, let's publish and install our Gym environment.
+Ok, we are done. I have also published the code [here on GitHub](https://github.com/mahyaret/gym-panda). Now, let's publish and install our Gym environment.
 
 # How to publish the new environment for Gym?
 
@@ -236,7 +236,6 @@ If you are interested to publish your environment on PyPI for other researchers 
 
   ```python
   from gym_foo.envs.foo_env import FooEnv
-  from gym_foo.envs.foo_extrahard_env import FooExtraHardEnv
   ```
 
 * `gym-foo/gym_foo/envs/foo_env.py` should look something like:
@@ -274,18 +273,17 @@ If you are interested to publish your environment on PyPI for other researchers 
     ```
     use your PyPI username and password.
 
-* After you have installed your package with `pip install -e gym-foo`, you can create an instance of the environment with `gym.make('gym_foo:foo-v0')`
+* You can install your package with `pip install -e gym-foo` locally or if you have uploaded it to PyPI you can install it with `pip install gym-foo`, then you can create an instance of the environment with `gym.make('gym_foo:foo-v0')`
 
-Now that we installed our environment, we can use it and test different algorithm on it. Because, it would be too boring to end this post here. I try to solve the environment with a little bit of cheating! In the next post I will explain how to solve the environment using a NN, for instance. [Here](https://github.com/mahyaret/kuka_rl) I have provided Deep Q Learning (DQN)  and  Proximal Policy Optimization (PPO) for a different environment consisting of a KUKA robot.
+Now that we installed our environment, we can use it and test different algorithms on it. Because, it would be too boring to end this post here, I try to solve the environment with a little bit of cheating! In the next post I will explain how to solve the environment using a NN, for instance. [Here](https://github.com/mahyaret/kuka_rl) I have provided Deep Q Learning (DQN)  and  Proximal Policy Optimization (PPO) for a different environment consisting of a KUKA robot.
 
 # Using the Gym Environment
 
 ## Installation
 
-To get started, you’ll need to have Python 3.5+ installed. Simply install `gym` using `pip`:
+As I mentioned before, to get started, you’ll need to have Python 3.5+ installed. Simply install `gym-panda` using `pip`:
 
 ```
-pip install gym
 pip install gym-panda
 ```
 
@@ -325,16 +323,18 @@ It should look something like this:
 
 ## Observations
 
-The environment’s `step` function returns exactly what we need. In fact, `step` returns four values. These are:
+The environment’s `step()` function returns exactly what we need. In fact, `step()` returns four values. These are:
 
 -   `observation` (**object**): an environment-specific object representing your observation of the environment. $$ [x_{gripper}, y_{gripper}, z_{gripper}, J_{finger_1}, J_{finger_2}] $$
 -   `reward` (**float**): amount of reward achieved by the previous action. zero or one.
--   `done` (**boolean**): whether it’s time to `reset` the environment again.  `done` being `True` indicates the episode has terminated. 
+-   `done` (**boolean**): whether it’s time to `reset` the environment again.  `done` being `True` indicates the episode has terminated and object reached to a `0.45` height. 
 -   `info` (**dict**): diagnostic information useful for debugging. $$ [x_{object}, y_{object}, z_{object}] $$
 
 This is just an implementation of the classic “agent-environment loop”. Each timestep, the agent chooses an `action`, and the environment returns an `observation` and a `reward`.
 
+<p align="center">
 ![](http://gym.openai.com/assets/docs/aeloop-138c89d44114492fd02822303e6b4b07213010bb14ca5856d2d49d6b62d88e53.svg)
+</p>
 
 The process gets started by calling `reset()`, which returns an initial `observation`. So a more proper way of writing the previous code would be to respect the `done` flag:
 
@@ -367,7 +367,7 @@ This should give a video and output like the following. You should be able to se
 
 
 ## PD Controller
-This part is only for illustrating how we can use the Gym environment that we've just created and it is not not by any means practical.
+This part is only for illustrating how we can use the Gym environment that we've just created and it is not by any means practical. It is a simple [Proportional Derivative (PD) Controller](https://en.wikipedia.org/wiki/PID_controller). We used the default timestep in pybullet which is 240 Hz for calculating derivative. There are three states in this solution: first, reaching the object; second, closing the gripper; third, picking up the object. We use diagnostic information from environment to locate the object. That is why I said this solution is not practical and is just for illustration. Proportional gain, $$ k_p $$, and derivative gain, $$ k_d $$ are designed to be `10` and `1`, respectively. The error for the controller is considered to be `0.01`. I repeat 20 episodes of running at most 100 time steps for each to show the solution's performance.  
 ```python
 import gym
 import gym_panda
