@@ -27,7 +27,8 @@ February 24/2018: CAD model is released on GitHub!
 
 You can now have access to the design CAD files here:  
 [https://github.com/mahyaret/SUF](https://github.com/mahyaret/SUF)  
-  
+
+1[](https://github.com/mahyaret/SUF/blob/master/img/finger.jpg)
 
 * * *
 
