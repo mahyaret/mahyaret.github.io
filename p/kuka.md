@@ -54,7 +54,7 @@ Our KUKA LWR IV hit its table very hard and one of the joints stopped moving aft
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/JxRSM5okypc" width="560"></iframe></div>
 
   
-My friend Nik and I opened the defected joint. Motor/brake screws got loose in their positions. The screws and threads looked fine so we fastened them tightly and assembled back everything.
+My friend Nik and I opened the defected joint. Motor/brake screws got loose in their positions. The screws and threads looked fine so we fastened them tightly and assembled back everything and done! everything's working ;)
 
 <p align="center">
 <img src="/img/kuka/IMG_7376.jpg" height="300">
