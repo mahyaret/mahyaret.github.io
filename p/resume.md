@@ -139,8 +139,8 @@ Technical Tools
 ---------------
 
 **Off-line Programming:** Demo3D, Bullet, CoppeliaSim, Adams  
-**ML Libraries:** PyTorch, TensorFlow  
-**Computer Programming**: Python, C, C++, C#, PHP, Visual Basic, UNIX shell scripting, MATLAB, Maple  
+**ML Libraries:** PyTorch, TensorFlow, LightGBM, XGBoost  
+**Computer Programming**: Python, C, C++, C#, MATLAB, Maple, PHP, Visual Basic, UNIX shell scripting  
 **CAD Design**: Protel, Eagle, Solidworks  
 **Embedded and Real-time Systems**: SIEMENS PLCs and Relays, ABB DCS system, uC/OS-II RTOS, Atmel ATmega MCUs, Microchip PIC MCUs, Rabbit MCUs, IEC 61131-3  
 **Operating Systems**: Microsoft Windows family, Linux, BSD and other UNIX variants, Apple OS X  
