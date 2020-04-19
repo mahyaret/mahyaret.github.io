@@ -170,6 +170,7 @@ Robotica
 - IEEE/ASME International Conference on Advanced Intelligent Mechatronics, AIM  
 - Proceedings of the Institution of Mechanical Engineers, Part E: Journal of Process Mechanical Engineering  
 - Proceedings of the Institution of Mechanical Engineers, Part I: Journal of Systems and Control Engineering  
+
 **Other:**  
 - PSAC Local 610 Steward  
 - Judge at the Thames Valley Science & Engineering Fair  
