@@ -55,7 +55,7 @@ Work Experience
 **Company**: Dematic  
 **Location**: Waterloo, ON, Canada  
 **Position**: Controls Software Engineer  
-**Responsibility**:Research and development of the Dematic flagship product for supply chain solution "Dematic Multi-Shuttle (DMS)". Development of automation and monitoring at all steps of software construction, from integration, testing to releasing. Agile software development.  
+**Responsibility**: Research and development of the Dematic flagship product for supply chain solution "Dematic Multi-Shuttle (DMS)". Development of automation and monitoring at all steps of software construction, from integration, testing to releasing. Agile software development.  
   
 **Date**: August 2015 -- September 2015  
 **Company**: KONNEXIO Inc.  
@@ -156,7 +156,7 @@ Membership
 
 (2014--2018) Physical Human-Robot Interactions Laboratory, Department of Electrical and Computer Engineering, The University of Western Ontario, Responsible for KUKA/DLR Light Weight Robot (7-DOF Robot).  
 (2011--2013) Real Time and Robotics Laboratory}, Department of Electrical Engineering, Amirkabir University of Technology, Tehran, Iran, Member.  
-(2010--present) Institute for Electrical and Electronics Engineers (IEEE), Student Member #90784597.  
+(2010--2018) Institute for Electrical and Electronics Engineers (IEEE), Student Member #90784597.  
 (2012--2013) IEEE Industrial Electronics Society, Member.  
 
   
@@ -164,15 +164,15 @@ Membership
 Community Involvement
 ---------------------
 
-**Reviewer**: [https://publons.com/a/1267511](https://publons.com/a/1267511)  
-IEEE/RSJ International Conference on Intelligent Robots and Systems  
+**Reviewer**: [Publons](https://publons.com/a/1267511)  
+- IEEE/RSJ International Conference on Intelligent Robots and Systems  
 Robotica  
-IEEE/ASME International Conference on Advanced Intelligent Mechatronics, AIM  
-Proceedings of the Institution of Mechanical Engineers, Part E: Journal of Process Mechanical Engineering  
-Proceedings of the Institution of Mechanical Engineers, Part I: Journal of Systems and Control Engineering  
+- IEEE/ASME International Conference on Advanced Intelligent Mechatronics, AIM  
+- Proceedings of the Institution of Mechanical Engineers, Part E: Journal of Process Mechanical Engineering  
+- Proceedings of the Institution of Mechanical Engineers, Part I: Journal of Systems and Control Engineering  
 **Other:**  
-PSAC Local 610 Steward  
-Judge at the Thames Valley Science & Engineering Fair  
+- PSAC Local 610 Steward  
+- Judge at the Thames Valley Science & Engineering Fair  
 
 Peer-Reviewed Papers ([Google Scholar](https://scholar.google.ca/citations?user=7I-Am6EAAAAJ&hl=en))
 -----------------------------------
@@ -188,7 +188,7 @@ Please send me an email to [mahyar.etedal@icloud.com](mailto:mahyar.etedal@iclou
 9.  A. Bakhshi, H.A. Talebi, A.A. Suratgar, **M. Abdeetedal**. "Stability and Transparency Analysis of a Bilateral Teleoperation in Presence of Data Loss," IEEE International Symposium on Robotic and Sensors Environments (ROSE), Magdeburg, Germany. IEEE, 2012. ([Access](https://drive.google.com/file/d/0B2qUWADY_c8kM3A1RWhtVmNyTHM/view?usp=sharing))
 
 
-Opensource Contributions ([see GitHub](https://github.com/mahyaret))
+Opensource Contributions ([GitHub](https://github.com/mahyaret))
 ---------------
 <div class="github-widget" data-username="mahyaret"></div>
 <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
