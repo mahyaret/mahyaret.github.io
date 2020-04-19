@@ -21,7 +21,7 @@ Education
 - Performed Unix shell scripting for The Robot Operating System (ROS) to control KUKA LWR IV.  
 - Successfully designed and developed electrical circuitries using Protel (e.g., current drivers, etc.), embedded sensors (e.g., six-axis force/torque sensor, load cell, encoder, etc.), and selected all the required parts (motors, linear rails, belts, pulleys, cables, etc.) for an Autonomous Robotic Harvester which has reached the commercialization stage.  
 - Developed motor drivers for fast prototyping robotic grippers using NI DAQ, dSPACE.  
-- Designed self-adaptive parallel structures for an Underactuated Robotic Finger using Solidworks, 3D Printed and assembled the prototypes  
+- Designed self-adaptive parallel structures for an Underactuated Robotic Finger using Solidworks, 3D Printed and assembled the prototypes.  
 - Led an Autonomous Robotic Harvester project to the commercialization stage. 
 - Assisted in teaching Real-time embedded system development in C (uC/OS-II RTOS).  
 - Assisted in teaching Control systems.  
