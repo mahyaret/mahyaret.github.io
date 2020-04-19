@@ -13,16 +13,19 @@ Education
 **Location**: London, Ontario, Canada             
 **Supervisor**: Dr. M.R. Kermani             
 **Thesis Title:** Robotic Manipulation of Environmentally Constrained Objects Using Underactuated Hands
-- Created an underactuated mechanism design for accurate Proprioceptive Tactile Sensing.  
-- Designed and developed an algorithm for Robotic Grasp Planning (fabricated for Agricultural Robotics) using a rapid method for friction estimation.  
+- Established a track record of research excellence on Robotics with publications in top conferences and journals such as, TMECH, and IROS.
+- Invented an underactuated mechanism for accurate Proprioceptive Tactile Sensing. 
+- Designed an algorithm for Robotic Grasp Planning, fabricated for Agricultural Robotics, using a rapid method for friction estimation. 
 - Implemented computer vision for Robotic Grasp Planning using point cloud obtained by Stereo Camera, and MATLAB.  
 - Achieved Real-Time control of KUKA Light-Weight Robot IV (7-DOF Robot) by developing a Multi-Threaded C++ interface with trajectory generation using Type II Reflexxes Motion Library.  
 - Performed Unix shell scripting for The Robot Operating System (ROS) to control KUKA LWR IV.  
 - Successfully designed and developed electrical circuitries using Protel (e.g., current drivers, etc.), embedded sensors (e.g., six-axis force/torque sensor, load cell, encoder, etc.), and selected all the required parts (motors, linear rails, belts, pulleys, cables, etc.) for an Autonomous Robotic Harvester which has reached the commercialization stage.  
 - Developed motor drivers for fast prototyping robotic grippers using NI DAQ, dSPACE.  
 - Designed self-adaptive parallel structures for an Underactuated Robotic Finger using Solidworks, 3D Printed and assembled the prototypes  
+- Led an Autonomous Robotic Harvester project to the commercialization stage. 
 - Assisted in teaching Real-time embedded system development in C (uC/OS-II RTOS).  
 - Assisted in teaching Control systems.  
+
   
 **MSc**            
 **Date**: September 2010 -- October 2012              
@@ -55,7 +58,14 @@ Work Experience
 **Company**: Dematic  
 **Location**: Waterloo, ON, Canada  
 **Position**: Controls Software Engineer  
-**Responsibility**: Research and development of the Dematic flagship product for supply chain solution "Dematic Multi-Shuttle (DMS)". Development of automation and monitoring at all steps of software construction, from integration, testing to releasing. Agile software development.  
+**Responsibility**:
+
+- Contributed to the Software Architecture Design of the Dematic flagship product for warehouse automation, Dematic Multi-Shuttle (DMS).
+- Implemented a high speed logging/tracing system (2,000,000 Msg/Sec) for High Availability Systems using C#, ETW, Kafka, and SQL.
+- Implemented a Real-Time Test Automation Tool for Siemens PLCs using C#, NUnit, and OPC UA.
+- Programmed complex Robotics/Automation systems using Off-line Programming (OLP) in Demo 3D.
+- Collaborated effectively within Dematic Global Software teams internationally in different time zones.
+- Developed software within Agile/Scrum framework.
   
 **Date**: August 2015 -- September 2015  
 **Company**: KONNEXIO Inc.  
@@ -142,7 +152,7 @@ Technical Tools
 **ML Libraries:** PyTorch, TensorFlow, LightGBM, XGBoost  
 **Computer Programming**: Python, C, C++, C#, MATLAB, Maple, PHP, Visual Basic, UNIX shell scripting  
 **CAD Design**: Protel, Eagle, Solidworks  
-**Embedded and Real-time Systems**: SIEMENS PLCs and Relays, ABB DCS system, uC/OS-II RTOS, Atmel ATmega MCUs, Microchip PIC MCUs, Rabbit MCUs, IEC 61131-3  
+**Embedded and Real-time Systems**: Epson 6-Axis and SCARA Robots, KUKA LWR IV, SIEMENS PLCs and Relays, ABB DCS system, uC/OS-II RTOS, Atmel ATmega MCUs, Microchip PIC MCUs, Rabbit MCUs, IEC 61131-3  
 **Operating Systems**: Microsoft Windows family, Linux, BSD and other UNIX variants, Apple OS X  
 **Instrumentation and Data Acquisition**: Geoelectrical instrument measure IP and RS, National Instrument DAQ, dSpace, Simulink, LabVIEW, Proteus  
 **Productivity Applications**: LaTeX, GNU Emacs, Vim, Microsoft Office, and most common productivity packages (for Windows, Mac, and Linux platforms)  
