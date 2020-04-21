@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CV
+title: Curriculum Vitae
 permalink: /p/resume.html
 ---
 Education
@@ -51,7 +51,15 @@ Work Experience
 **Company**: Epson  
 **Location**: Toronto, ON, Canada  
 **Position**: Research Scientist - Robotics/AI  
-**Responsibility**: Confidential.  
+**Responsibility**: 
+- Conducted research on Deep Reinforcement Learning for Robotic Grasping using alternative sensing.
+- Led research on Robotic Controls and Optimizations (Multi-Objective Bayesian Optimization).
+- Submitted technology road-maps and patents for Epson's future initiatives for intelligent robotic systems.
+- Performed self-sufficiently in developing research ideas and implementing them. This allowed me to conduct research and implementations seamlessly and accurately with minimal external development (e.g. code conversion from MATLAB/Python to C++) which saved us time and any potential inconsistency between idea and implementation.
+- Implemented systematic unit-test framework to test and increase the reliability of the software.
+- Provided unbiased and scientific opinion in discussions and meetings to address the stake holders concerns.
+- Collaborated effectively with other researchers and developers to get the project done.
+- Collaborated effectively within Epson global software teams internationally in different time zone.
   
   
 **Date**: January 2018 -- May 2019  
