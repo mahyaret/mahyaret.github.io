@@ -116,16 +116,17 @@ env = MoveTowardZ(env)
 As you saw earlier, the observation space of the environment was limited to the robot status. The environment also has a `render()` function that returns camera image. I want to change the observation of the environment to be image-based. Replacing the observation to be the camera image may help the policy to locate the object. In order to change the observation we define an `ObservationWrapper` class: `ProcessFrame84` in which we have the `observation()` method. This method returns the output of `render()` function after processing it. During the initialization, we also redefine the `observation_space` to match the new observation. `process()` function is for scaling down the image and turning it into back and white image.
 
 ```python
-def __init__(self, env=None):
+class ProcessFrame84(gym.ObservationWrapper):
+    def __init__(self, env=None):
         super(ProcessFrame84, self).__init__(env)
         self.env = env
         self.observation_space = gym.spaces.Box(
             low=0, high=255, shape=(84, 84, 1), dtype=np.uint8)
 
-def observation(self, obs):
+    def observation(self, obs):
         return ProcessFrame84.process(self.env.render())
 
-def process(frame):
+    def process(frame):
         if frame.size == 720 * 960 * 3:
             img = np.reshape(frame, [720, 960, 3]).astype(
                 np.float32)
@@ -144,24 +145,26 @@ def process(frame):
 As PyTorch requires different order of channel, width, and height for image input we define another `ObservationWrapper` class `ImageToPyTorch`. In this class we make the image compatible with the PyTorch requirement.
 
 ```python
-def __init__(self, env):
+class ImageToPyTorch(gym.ObservationWrapper):
+    def __init__(self, env):
         super(ImageToPyTorch, self).__init__(env)
         old_shape = self.observation_space.shape
         new_shape = (old_shape[-1], old_shape[0], old_shape[1])
         self.observation_space = gym.spaces.Box(
             low=0.0, high=1.0, shape=new_shape, dtype=np.float32)
 
-def observation(self, observation):
+    def observation(self, observation):
         return np.moveaxis(observation, 2, 0)
 ```
 
 There are cases that you may want to make the environment a little bit easier to solve. For instance, it is safe to assume that you always want to move toward the bin in the $$ Z-axis $$ direction. In that case, you need to modify the environment using the `ActionWrapper`. Here we defined such wrapper class, `MoveTowardZ`.
 
 ```python
-def __init__(self, env):
+class MoveTowardZ(gym.ActionWrapper):
+    def __init__(self, env):
         super(MoveTowardZ, self).__init__(env)
 
-def action(self, action):
+    def action(self, action):
         action[2] = -.3
         return action
 ```
