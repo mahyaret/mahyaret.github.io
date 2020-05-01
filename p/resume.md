@@ -13,7 +13,7 @@ Education
 **Location**: London, Ontario, Canada             
 **Supervisor**: Dr. M.R. Kermani             
 **Thesis Title:** Robotic Manipulation of Environmentally Constrained Objects Using Underactuated Hands
-- Established a track record of research excellence on Robotics with publications in top conferences and journals such as, TMECH, and IROS.
+- Established a track record of research excellence on Robotics with publications in top conferences and journals such as TMECH, and IROS.
 - Invented an underactuated mechanism for accurate Proprioceptive Tactile Sensing. 
 - Designed an algorithm for Robotic Grasp Planning, fabricated for Agricultural Robotics, using a rapid method for friction estimation. 
 - Implemented computer vision for Robotic Grasp Planning using point cloud obtained by Stereo Camera, and MATLAB.  
@@ -57,9 +57,9 @@ Work Experience
 - Submitted technology road-maps and patents for Epson's future initiatives for intelligent robotic systems.
 - Performed self-sufficiently in developing research ideas and implementing them. This allowed me to conduct research and implementations seamlessly and accurately with minimal external development (e.g. code conversion from MATLAB/Python to C++) which saved us time and any potential inconsistency between idea and implementation.
 - Implemented systematic unit-test framework to test and increase the reliability of the software.
-- Provided unbiased and scientific opinion in discussions and meetings to address the stake holders concerns.
+- Provided unbiased and scientific opinion in discussions and meetings to address the stakeholders' concerns.
 - Collaborated effectively with other researchers and developers to get the project done.
-- Collaborated effectively within Epson global software teams internationally in different time zone.
+- Collaborated effectively within Epson global software teams internationally in different time zones.
   
   
 **Date**: January 2018 -- May 2019  
@@ -69,11 +69,11 @@ Work Experience
 **Responsibility**:
 
 - Contributed to the Software Architecture Design of the Dematic flagship product for warehouse automation, Dematic Multi-Shuttle (DMS).
-- Implemented a high speed logging/tracing system (2,000,000 Msg/Sec) for High Availability Systems using C#, ETW, Kafka, and SQL.
+- Implemented a high-speed logging/tracing system (2,000,000 Msg/Sec) for High Availability Systems using C#, ETW, Kafka, and SQL.
 - Implemented a Real-Time Test Automation Tool for Siemens PLCs using C#, NUnit, and OPC UA.
 - Programmed complex Robotics/Automation systems using Off-line Programming (OLP) in Demo 3D.
 - Collaborated effectively within Dematic Global Software teams internationally in different time zones.
-- Developed software within Agile/Scrum framework.
+- Developed software within the Agile/Scrum framework.
   
 **Date**: August 2015 -- September 2015  
 **Company**: KONNEXIO Inc.  
