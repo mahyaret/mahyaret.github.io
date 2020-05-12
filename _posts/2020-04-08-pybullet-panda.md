@@ -153,3 +153,6 @@ while True:
 ```
 
 Now that we have learned the very basics of PyBullet, we are ready to build a gym environment which I will explain in the next post.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTE3MjQxMzQ2Ml19
+-->
