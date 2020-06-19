@@ -184,7 +184,7 @@ Community Involvement
 
 **Reviewer**: [Publons](https://publons.com/a/1267511)  
 - IEEE/RSJ International Conference on Intelligent Robots and Systems  
-Robotica  
+- Robotica  
 - IEEE/ASME International Conference on Advanced Intelligent Mechatronics, AIM  
 - Proceedings of the Institution of Mechanical Engineers, Part E: Journal of Process Mechanical Engineering  
 - Proceedings of the Institution of Mechanical Engineers, Part I: Journal of Systems and Control Engineering  
