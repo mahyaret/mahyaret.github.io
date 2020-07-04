@@ -196,15 +196,16 @@ Ok now we are ready to apply the Spinning Up PPO. As mentioned in the OpenAI Spi
 
 > They [algorithms] are all implemented with [MLP](https://en.wikipedia.org/wiki/Multilayer_perceptron) (non-recurrent) actor-critics, making them suitable for fully-observed, non-image-based RL environments, e.g. the [Gym Mujoco](https://gym.openai.com/envs/#mujoco) environments.
 
-I had to add the Convolutional Neural Network to their implementation. That is why in the beginning , I used my fork of Spinning Up to install it. For Applying PPO to our environment we can:
+I had to add the Convolutional Neural Network (pretrained ResNet) to their implementation. That is why in the beginning , I used my fork of Spinning Up to install it. For Applying PPO to our environment we can:
 
 ```python
 env_fn = lambda : env
-ac_kwargs = dict(hidden_sizes=[64,64], activation=nn.ReLU)
+ac_kwargs = dict(hidden_sizes=[18,64,64], activation=nn.ReLU)
 
 logger_kwargs = dict(output_dir='spinup', exp_name='panda_ppo')
 
 ppo(env_fn=env_fn,actor_critic=core.CNNActorCritic, ac_kwargs=ac_kwargs, steps_per_epoch=5000, epochs=250, logger_kwargs=logger_kwargs)
 ```  
+the first element of `hidden_sizes` determines which pretrained ResNet to use. The available choices are 18, 34, 50, 101, and 152. 
 
 Running the algorithm may not be able to solve the Panda environment, but my main purpose was to show how to use PyBullet for a Gym environment, and also how to modify it if needed. 
