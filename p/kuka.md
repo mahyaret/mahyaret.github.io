@@ -7,7 +7,7 @@ permalink: /p/kuka.html
 
 July 6/2020: Multi-Agent Reinforcement Learning
 ------------------------------------------
-I have released simple implementations of Multi-KUKA Proximal Policy Optimization (PPO) using PyTorch, PyBullet and OpenAI Gym. The code can be found [here](https://github.com/mahyaret/kuka_r).
+I have released simple implementations of Multi-KUKA Proximal Policy Optimization (PPO) using PyTorch, PyBullet and OpenAI Gym. The code can be found [here](https://github.com/mahyaret/kuka_rl).
 <p align="center">
 <img src="/img/kuka/kuka.gif" height="150">
 <img src="/img/kuka/kuka.gif" height="150">
@@ -22,7 +22,7 @@ I have released simple implementations of Multi-KUKA Proximal Policy Optimizatio
 
 April 15/2020: KUKA Reinforcement Learning
 ------------------------------------------
-I have released simple implementations of Deep Q Learning (DQN) and Proximal Policy Optimization (PPO) using PyTorch, PyBullet and OpenAI Gym. The code can be found [here](https://github.com/mahyaret/kuka_r).
+I have released simple implementations of Deep Q Learning (DQN) and Proximal Policy Optimization (PPO) using PyTorch, PyBullet and OpenAI Gym. The code can be found [here](https://github.com/mahyaret/kuka_rl).
 <p align="center">
 <img src="/img/kuka/kuka.gif" height="300">
 </p>
