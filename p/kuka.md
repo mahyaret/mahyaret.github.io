@@ -5,7 +5,7 @@ permalink: /p/kuka.html
 ---
 
 
-July 6/2020: Multi-Agent Reinforcement Learning
+July 6/2020: Multi-KUKA Reinforcement Learning
 ------------------------------------------
 I have released simple implementations of Multi-KUKA Proximal Policy Optimization (PPO) using PyTorch, PyBullet and OpenAI Gym. The number of parallel environments can be set to any number. By default, it is set to be twice the number of available CPU threads. The code can be found [here](https://github.com/mahyaret/kuka_rl).
 <p align="center">
