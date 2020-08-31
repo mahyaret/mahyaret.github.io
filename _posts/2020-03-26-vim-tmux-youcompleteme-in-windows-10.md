@@ -29,6 +29,24 @@ In this file it refers to the python that is used for compilation. You should ch
 
 Some useless notes!
 -------------------
+### Speeding up MSYS2:
+
+For some reason MSYS2 was slow on Windows 10 for me, so I did the following:
+```
+$ mkpasswd -l -c > /etc/passwd
+$ mkgroup -l -c > /etc/group
+```
+Then I edited `/etc/nsswitch.conf` and modifying passwd and group sections to read from “files” instead of “files db”:
+```
+# Begin /etc/nsswitch.conf
+passwd: files
+group: files
+db_enum: cache builtin
+db_home: cygwin desc
+db_shell: cygwin desc
+db_gecos: cygwin desc
+# End /etc/nsswitch.conf
+```
 
 ### Comparing two files:
 
