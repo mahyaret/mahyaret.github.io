@@ -29,6 +29,10 @@ In this file it refers to the python that is used for compilation. You should ch
 
 Some useless notes!
 -------------------
+### Using ConEmu
+mintty which is the default shell in MSYS2 does not show the latest commands on the terminal (at least mine :| ) so I have switched to ConEmu which can be downloaded from here:
+https://conemu.github.io/
+
 ### Speeding up MSYS2:
 
 For some reason MSYS2 was slow on Windows 10 for me, so I did the following:
