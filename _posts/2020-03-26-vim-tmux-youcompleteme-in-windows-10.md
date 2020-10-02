@@ -82,7 +82,10 @@ In case you are interested your Anaconda Python Environments in msys2 add the fo
 
 add the following to `~/.bash_profile` or `~/.bashrc` to start terminal or msys2 with tmux by default:  
 
-    if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then    tmux attach -t default || tmux new -s defaultfi
+    if command -v tmux &> /dev/null && [ -z "$TMUX" ]; 
+    then    
+        tmux attach -t default || tmux new -s default
+    fi
 
 ### Looking for Fonts?
 
