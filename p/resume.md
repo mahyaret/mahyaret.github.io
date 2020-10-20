@@ -78,19 +78,19 @@ Work Experience
 **Date**: August 2015 -- September 2015  
 **Company**: KONNEXIO Inc.  
 **Location**: London, ON, Canada  
-**Position**: Software Engineering Intern  
+**Position**: Software Engineer - Intern  
 **Responsibility**: Automation controls development, HMI programming, C# development, Hardware and Software troubleshooting and debug.  
   
 **Date**: October 2014 -- December 2015  
 **Company**: eVinci Technologies Inc.  
 **Location**: London, ON, Canada  
-**Position**: Application Engineer  
-**Responsibility**: Circuit design and embedded system development for data acquisition devices. Server interface development for big data management. 3D CAD design and stress analysis.  
+**Position**: Software Engineer  
+**Responsibility**: - Embedded software development. Circuit design and embedded system development for data acquisition devices. Server interface development for big data management. 3D CAD design and stress analysis.  
   
 **Date**: June 2014 -- September 2014  
 **Company**: Whitecrest Mushrooms Limited  
 **Location**: London, ON, Canada  
-**Position**: Software Engineering Intern  
+**Position**: Software Engineer - Intern  
 **Responsibility**: KUKA Light Weight Robot IV (7-DOF Robot) Fast Research Interface (FRI) development, GUI interface development for KUKA FRI interface, trajectory generator development using Type II Reflexxes Motion Library.  
   
 **Date**: 2011 -- 2012  
