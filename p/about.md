@@ -18,7 +18,7 @@ This is my personal website reflecting only my personal projects and endeavours.
 <img src="/img/about/20160709_115131.jpg" height="300">
 </p>
 
-As a programmer, personally, I'm passionate about developing Free Software. “Free software” means software that respects users' freedom and community. I believe users should have the freedom to run, copy, distribute, study, change and improve the software. I think when users don't control the program, the program controls the users. The developer manages the program, and through it controls the users. A nonfree or “proprietary” program is, therefore, an instrument of unjust power. During high school, I published an article on open source and free software philosophy in an Iranian newspaper (Khabar newspaper) which you can find [here](https://drive.google.com/open?id=0B2qUWADY_c8kZEdGV0RVTW4zYzA) (in Persian).
+As a programmer, personally, I'm passionate about developing Free Software. “Free software” means software that respects users' freedom and community. I believe users should have the freedom to run, copy, distribute, study, change and improve the software. I think when users don't control the program, the program controls the users. The developer manages the program, and through it controls the users. A nonfree or “proprietary” program is, therefore, an instrument of unjust power. During high school (2004), I published an article on open source and free software philosophy in an Iranian newspaper (Khabar newspaper) which you can find [here](https://drive.google.com/open?id=0B2qUWADY_c8kZEdGV0RVTW4zYzA) (in Persian).
 
   
 
