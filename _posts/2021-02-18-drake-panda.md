@@ -32,13 +32,6 @@ Drake may be installed from binaries or source. Both may be gotten here:
 
 ## Installation
 
-Drake is not compatible with Anaconda, so you might want to remove the auto start configuration from your `~/.bashrc` which might look like something like this:
-```
- >>> conda initialize >>>
- ...
- <<< conda initialize <<<
-```
-
 ### Using source
 
 Drake uses Bazel as a build tool under the hood. [Bazel](https://bazel.build/) is an open-source build and test tool. For compiling with the Python Bindings:
