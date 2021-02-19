@@ -42,6 +42,7 @@ mkdir drake-build
 cd drake-build
 cmake ../drake
 make -j
+mv ../drake ../drake_
 ```
 By default pydrake will not be in the path. You can add the following to your `~/.bashrc`:
 ```
@@ -69,9 +70,15 @@ By default pydrake will not be in the path. You can add the following to your `~
 export PYTHONPATH=/opt/drake/lib/python3.6/site-packages:${PYTHONPATH}
 ```
 
-# Using Pydrake
+You should be able to successfully run the following:
+```
+python3 -c 'import pydrake.all'
+```
 
-Pydrake itself has generated documentation available here:
+
+# pydrake
+
+pydrake itself has generated documentation available here:
 [http://drake.mit.edu/pydrake/index.html](http://drake.mit.edu/pydrake/index.html)
 
 ## Drake Concepts
@@ -99,4 +106,4 @@ In particular the python source used to generate some of the examples in the boo
 
 The full course is available online both on Edx and more recent versions on Youtube.
 
-[http://underactuated.csail.mit.edu/Spring2018/](http://underactuated.csail.mit.edu/Spring2018/)
+[http://underactuated.csail.mit.edu/Spring2020/](http://underactuated.csail.mit.edu/Spring2020/)
