@@ -120,7 +120,7 @@ Work Experience
 Certifications
 --------------
 
-(2021) Professional Engineer (P.Eng) by Professional Engineers Ontario (PEO)
+(2021) Professional Engineer (P.Eng.) by Professional Engineers Ontario (PEO)  
 (2019) Deep Learning Specialization by deeplearning.ai  
 (2019) Udacity Deep Reinforcement Learning Nanodegree  
 (2019) Machine Learning by Stanford University  
@@ -173,7 +173,7 @@ Technical Tools
 Membership
 ----------
 
-(2021--Present) Professional Engineers Ontario (PEO)
+(2021--Present) Professional Engineers Ontario (PEO).  
 (2014--2018) Physical Human-Robot Interactions Laboratory, Department of Electrical and Computer Engineering, The University of Western Ontario, Responsible for KUKA/DLR Light Weight Robot (7-DOF Robot).  
 (2011--2013) Real Time and Robotics Laboratory, Department of Electrical Engineering, Amirkabir University of Technology, Tehran, Iran, Member.  
 (2010--2018) Institute for Electrical and Electronics Engineers (IEEE), Student Member #90784597.  
