@@ -47,7 +47,13 @@ Education
   
 Work Experience
 ---------------
-**Date**: June 2019 -- Present  
+**Date**: August 2021 -- Present  
+**Company**: Amazon  
+**Location**: Boston, MA, USA  
+**Position**: Applied Scientist - Robotics/AI  
+
+
+**Date**: June 2019 -- August 2021  
 **Company**: Epson  
 **Location**: Toronto, ON, Canada  
 **Position**: Research Scientist - Robotics/AI  
