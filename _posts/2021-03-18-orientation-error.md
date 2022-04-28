@@ -11,7 +11,7 @@ tags:
 # Robot Control
 The job of the robot controller is to convert the task specification to forces and torques at the actuators. Control strategies include motion control, force control, hybrid motion/force control, or impedance control. Which of these behaviors is appropriate depends on both the task and the environment. For carrying out any task in any environment, we need to control force or motion in the required direction. Please remember that this "or" is exclusive. In other words, if the robot imposes a motion then the environment will determine the force, and if the robot imposes a force then the environment will determine the motion. The following is the use cases according to the demands of typical robotic applications: 
 
-1) Standard industrial applications: 
+1) Standard industrial application: 
 * pre-programmed task 
 * external interface (if any) only necessary for synchronization
 
@@ -74,4 +74,4 @@ In any case, rigid-body dynamics require integration of orientation over time. T
 
 # Orientation Error
 
-if $$R_d = [n_d s_d a_d]$$ denotes the desired rotation matrix of the end-effector frame and $$R_e = [n_e s_e a_e]$$ the rotation matrix that can be computed from the joint variables, the orientation error between the two frames can experssed using unit quaternion. Let $$Q_d = {\eta_d, \epsilon_d}$$ and $$Q_e = {\eta_e, \epsilon_e}$$ represent the quaternions associated with $$R_d$$ and $$Re$$, respectively. The orientation error can be expressed in terms of quaternion as: $$ e_O = \Delta \epsiloon = \eta_e(q)\epsilon_d - \eta_d\epsilon_e(q) - S(\epsilon_d)\epsilon_e(q)$$, where the skew-symmetric operator $$S(.)$$ is used. Notice that the explicit computation of $$\eta_e$$ and $$\epsilon_e$$ from the joint variables is not possibleand it requires the rintermediate ccomputation of the rotation matrix $$R_e$$ that is available from the manipulator forward kinematics. Then the quaternion can be extracted.  
+if $$R_d = [n_d s_d a_d]$$ denotes the desired rotation matrix of the end-effector frame and $$R_e = [n_e s_e a_e]$$ the rotation matrix that can be computed from the joint variables, the orientation error between the two frames can experssed using unit quaternion. Let $$Q_d = {\eta_d, \epsilon_d}$$ and $$Q_e = {\eta_e, \epsilon_e}$$ represent the quaternions associated with $$R_d$$ and $$Re$$, respectively. The orientation error can be expressed in terms of quaternion as: $$ e_O = \Delta \epsilon = \eta_e(q)\epsilon_d - \eta_d\epsilon_e(q) - S(\epsilon_d)\epsilon_e(q)$$, where the skew-symmetric operator $$S(.)$$ is used. Notice that the explicit computation of $$\eta_e$$ and $$\epsilon_e$$ from the joint variables is not possibleand it requires the rintermediate ccomputation of the rotation matrix $$R_e$$ that is available from the manipulator forward kinematics. Then the quaternion can be extracted.  
