@@ -67,7 +67,7 @@ It computes contact forces and integrates the motion of the bodies.
     - Scales with relatively less computational intensity using CPU threads or GPU (FleX)
 
 <p align="center">
-<img src="/img/twenty/panda_state.png" height="300">
+<img src="/img/simulation/panda_state.png" height="300">
 </p>
 
 - Engineering Simulators
@@ -75,8 +75,10 @@ It computes contact forces and integrates the motion of the bodies.
     - More complex physics interactions
     - More functionality (e.g. frequency-domain analyses, FEM of compliant structures, optimization of cost functions)
 
-<p align="center">
-<img src="/img/twenty/panda_state.png" height="300">
+<p align="left">
+<img src="/img/simulation/atv_excavator_0.gif" height="300">
+<img src="/img/simulation/dynamics.gif" height="300">
+<img src="/img/simulation/flexible_body_1_0.gif" height="300">
 </p>
 
 # Issues of video game simulators
