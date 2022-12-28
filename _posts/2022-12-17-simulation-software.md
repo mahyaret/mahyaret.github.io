@@ -16,7 +16,7 @@ Here is a list of different types of simulation engines:
 
 
 |Real-time | |High-Precision |
-| :---       |    :---   |  :--- |
+| :-     |    :-   |  :- |
 | **Opensource**      | **Proprietary** | Solidworks |
 | Advanced Simulation Library      | Adams Multibody Dynamics Simulation        |  ANSYS |
 | Blender   | Agx Dynamics        | ABAQUS |
