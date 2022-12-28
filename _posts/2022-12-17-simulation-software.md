@@ -65,10 +65,19 @@ It computes contact forces and integrates the motion of the bodies.
 - Video Game Simulators
     - Real-time or faster
     - Scales with relatively less computational intensity using CPU threads or GPU (FleX)
+
+<p align="center">
+<img src="/img/twenty/panda_state.png" height="300">
+</p>
+
 - Engineering Simulators
     - Real-time or slower
     - More complex physics interactions
     - More functionality (e.g. frequency-domain analyses, FEM of compliant structures, optimization of cost functions)
+
+<p align="center">
+<img src="/img/twenty/panda_state.png" height="300">
+</p>
 
 # Issues of video game simulators
 - Time-Integration
