@@ -67,8 +67,8 @@ It computes contact forces and integrates the motion of the bodies.
     - Scales with relatively less computational intensity using CPU threads or GPU (FleX)
 
 <p align="center">
-<img src="/img/simulation/bullet.png" height="100">
-<img src="/img/simulation/flex.png" height="100">
+<img src="/img/simulation/bullet.png" height="200">
+<img src="/img/simulation/flex.png" height="200">
 </p>
 
 - Engineering Simulators
