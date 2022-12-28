@@ -9,10 +9,9 @@ tags:
 ---
 
 # Physics Engine: Real-Time VS. High-Precision
-The job of the robot controller is to convert the task specification to forces and torques at the actuators. Control strategies include motion control, force control, hybrid motion/force control, or impedance control. Which of these behaviors is appropriate depends on both the task and the environment. For carrying out any task in any environment, we need to control force or motion in the required direction. Please remember that this "or" is exclusive. In other words, if the robot imposes a motion then the environment will determine the force, and if the robot imposes a force then the environment will determine the motion. The following is the use cases according to the demands of typical robotic applications: 
-# Physics Engine: Real-Time VS. High-Precision
-
-| Opensource      | Proprietary |
+In this post, I am going to present the different physics engines that are available for engineering applications. I'll talk about what are different simulation types and applications. I'll introduce the rigid-body simulation techniques. I'll mention what simulations are suitable for Reinforcement Learning (RL). Additionally, I'll mention issues with most Physics Engines and what kind of experimental verification can be done to quantify these issues.
+|Real-time | High-Precision |
+| Opensource      | Proprietary | Solidworks |
 | :---        |    :----:   |  
-| Advanced Simulation Library      | Adams Multibody Dynamics Simulation        | 
-| Blender   | Agx Dynamics        | 
+| Advanced Simulation Library      | Adams Multibody Dynamics Simulation        |  ANSYS |
+| Blender   | Agx Dynamics        | ABAQUS |
