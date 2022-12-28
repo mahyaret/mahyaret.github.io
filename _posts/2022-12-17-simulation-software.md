@@ -106,12 +106,12 @@ Breakable objects.
 Here are important resources on this topic:
 - [Benchmarking Simulated Robotic Manipulation through a Real World Dataset.](https://arxiv.org/abs/1911.01557)
 <p align="center">
-<img src="/img/simulation/table.png" height="200">
+<img src="/img/simulation/table.png" height="300">
 </p>
 - [Rigid-body Simulation using Gaming Engines: A Study on the Usability of Gaming Industry Software for Simulating Engineering Problems
 Title.](https://repository.tudelft.nl/islandora/object/uuid%3Ad6381efc-b79f-4d6a-92c6-20ced2968efe)
 <p align="center">
-<img src="/img/simulation/net.png" height="200">
+<img src="/img/simulation/net.png" height="300">
 </p>
 
 # Conclusion
