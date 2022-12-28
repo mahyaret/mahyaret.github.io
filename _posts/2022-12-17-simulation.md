@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simulation Software
+title: Simulation
 date: '2022-12-17T19:00:00.002-04:00'
 author: Mahyar
 tags:
