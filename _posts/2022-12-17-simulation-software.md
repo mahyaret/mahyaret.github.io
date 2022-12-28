@@ -87,9 +87,9 @@ Breakable objects.
 
 # Experimental verification
 Here are important resources on this topic:
-- Benchmarking Simulated Robotic Manipulation through a Real World Dataset. (https://arxiv.org/abs/1911.01557)
-- Rigid-body Simulation using Gaming Engines: A Study on the Usability of Gaming Industry Software for Simulating Engineering Problems
-Title. (https://repository.tudelft.nl/islandora/object/uuid%3Ad6381efc-b79f-4d6a-92c6-20ced2968efe)
+- [Benchmarking Simulated Robotic Manipulation through a Real World Dataset.](https://arxiv.org/abs/1911.01557)
+- [Rigid-body Simulation using Gaming Engines: A Study on the Usability of Gaming Industry Software for Simulating Engineering Problems
+Title.](https://repository.tudelft.nl/islandora/object/uuid%3Ad6381efc-b79f-4d6a-92c6-20ced2968efe)
 
 # Conclusion
 
