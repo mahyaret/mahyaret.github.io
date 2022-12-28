@@ -85,6 +85,10 @@ Fluid simulation (still rigid-body, COMSOL vs FleX)
 Mechanically applied forces (motors, etc.) 
 Breakable objects.
 
+# Experimental verification
+Here are important resources on this topic:
+- Benchmarking Simulated Robotic Manipulation through a Real World Dataset(https://arxiv.org/abs/1911.01557)
+- 
 
 # Conclusion
 
