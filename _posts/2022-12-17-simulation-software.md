@@ -13,6 +13,6 @@ In this post, I am going to present the different physics engines that are avail
 
 |Real-time | |High-Precision |
 | :---        |    :----   |  :--- |
-| Opensource      | Proprietary | Solidworks |
+| **Opensource**      | **Proprietary** | Solidworks |
 | Advanced Simulation Library      | Adams Multibody Dynamics Simulation        |  ANSYS |
 | Blender   | Agx Dynamics        | ABAQUS |
