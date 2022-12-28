@@ -16,3 +16,17 @@ In this post, I am going to present the different physics engines that are avail
 | **Opensource**      | **Proprietary** | Solidworks |
 | Advanced Simulation Library      | Adams Multibody Dynamics Simulation        |  ANSYS |
 | Blender   | Agx Dynamics        | ABAQUS |
+|Box2D|NovodeX|VisSim|
+|Bullet (AMD)|Renderware Physics|Working Model|
+|MuJoCo|SIMPACK|COMSOL|
+|Chipmunk physics engine|Vortex Dynamics||
+|DART|Havoc (Intel)|||
+|FleX (Nvidia only on GPU)|||
+|Newton Game Dynamics|||
+|Open Dynamics Engine|||
+|PAL (Physics Abstraction Layer) |||
+|PhysX (Nvidia)|||
+|Project Chrono |||
+|Siconos|||
+|SOFA (Simulation Open Framework Architecture)|||
+|Tokamak|||
