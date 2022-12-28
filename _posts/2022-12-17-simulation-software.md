@@ -76,9 +76,14 @@ It computes contact forces and integrates the motion of the bodies.
     - More functionality (e.g. frequency-domain analyses, FEM of compliant structures, optimization of cost functions)
 
 <p align="left">
-<img src="/img/simulation/atv_excavator_0.gif" height="300">
-<img src="/img/simulation/dynamics.gif" height="300">
-<img src="/img/simulation/flexible_body_1_0.gif" height="300">
+<img src="/img/simulation/atv_excavator_0.gif" height="100">
+<img src="/img/simulation/dynamics.gif" height="100">
+<img src="/img/simulation/flexible_body_1_0.gif" height="100">
+</p>
+<p align="right">
+<img src="/img/simulation/atv_excavator_0.gif" height="100">
+<img src="/img/simulation/dynamics.gif" height="100">
+<img src="/img/simulation/flexible_body_1_0.gif" height="100">
 </p>
 
 # Issues of video game simulators
