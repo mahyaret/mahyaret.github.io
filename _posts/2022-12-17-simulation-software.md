@@ -41,3 +41,18 @@ Here is a list of different types of simulation engines:
 - Video games (contact dynamics of large numbers of rigid/soft-bodies in real-time) (example: Bullet)
 - Etc.
 
+# Rigid-body simulation
+- Collision detection
+It uses the position and geometric data of bodies to detect contact and penetration.
+- Simulator
+It computes contact forces and integrates the motion of the bodies.
+1. **The time control module** calls other modules and defines the integration time-step size. 
+Fixed time-step which is the simplest method is to use, where the size of the time-step is set at the beginning of a simulation and does not vary. (Bullet)
+Adaptive time-stepping algorithms vary the size of the time-step during the simulation, depending on the relative error of the state of the system. This can prevent penetrations between bodies, but increases computational expense. (ADAMS)
+2. **The constraint solver** computes all reaction forces acting on the bodies due to contact behavior or other constraints (e.g. joints, motors). 
+Penalty based which adds a non-linear, unidirectional spring between the two bodies. (ADAMS)
+Constrained based which the reaction forces are defined such that they enforce a constraint on either the position or the velocity of the objects, preventing penetration. 
+Direct methods can provide very accurate solutions, but at a very high computational expense. 𝒪(𝑛^3 )
+Iterative fixed point schemes which approximate a solution iteratively, until certain convergence criteria are met.  𝒪(𝑛) (Bullet)
+Newton methods also solve the system iteratively, achieving higher accuracy than iterative fixed point, but at a higher convergence time. 𝒪(𝑛^2 )  
+3. **The motion solver** uses all forces acting on the bodies to update the velocities and positions.
