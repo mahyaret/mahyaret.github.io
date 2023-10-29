@@ -3,55 +3,21 @@ layout: page
 title: Curriculum Vitae
 permalink: /p/resume.html
 ---
-Education
-----
-**PhD**              
-**Date**: January 2014 -- December 2017             
-**Program**: Ph.D. candidate in Electrical and Computer Engineering               
-**GPA**: 4.0/4.0             
-**University**: The University of Western Ontario             
-**Location**: London, Ontario, Canada             
-**Supervisor**: Dr. M.R. Kermani             
-**Thesis Title:** Robotic Manipulation of Environmentally Constrained Objects Using Underactuated Hands
-- Established a track record of research excellence on Robotics with publications in top conferences and journals such as TMECH, and IROS.
-- Invented an underactuated mechanism for accurate Proprioceptive Tactile Sensing. 
-- Designed an algorithm for Robotic Grasp Planning, fabricated for Agricultural Robotics, using a rapid method for friction estimation. 
-- Implemented computer vision for Robotic Grasp Planning using point cloud obtained by Stereo Camera, and MATLAB.  
-- Achieved Real-Time control of KUKA Light-Weight Robot IV (7-DOF Robot) by developing a Multi-Threaded C++ interface with trajectory generation using Type II Reflexxes Motion Library.  
-- Performed Unix shell scripting for The Robot Operating System (ROS) to control KUKA LWR IV.  
-- Successfully designed and developed electrical circuitries using Protel (e.g., current drivers, etc.), embedded sensors (e.g., six-axis force/torque sensor, load cell, encoder, etc.), and selected all the required parts (motors, linear rails, belts, pulleys, cables, etc.) for an Autonomous Robotic Harvester which has reached the commercialization stage.  
-- Developed motor drivers for fast prototyping robotic grippers using NI DAQ, dSPACE.  
-- Designed self-adaptive parallel structures for an Underactuated Robotic Finger using Solidworks, 3D Printed and assembled the prototypes.  
-- Led an Autonomous Robotic Harvester project to the commercialization stage. 
-- Assisted in teaching Real-time embedded system development in C (uC/OS-II RTOS).  
-- Assisted in teaching Control systems.  
-
-  
-**MSc**            
-**Date**: September 2010 -- October 2012              
-**Program**: M.Sc in Electrical Engineering majored in Control Systems                
-**GPA**: 3.63/4.0              
-**University**: Amirkabir University of Technology (Tehran Polytechnic)              
-**Location**: Tehran, Iran              
-**Supervisors**: Prof. H.A. Talebi and Dr. F. Abdollahi              
-**Thesis title**: Implementation and Control Design for Grasping Convex Objects Using Cooperative Whole Arm Manipulator.              
-  
-**BSc**              
-**Date**: September 2005 -- July 2009              
-**Program**: B.Sc in Electrical Engineering majored in Control Systems              
-**University**: Shiraz University (Pahlavi University)              
-**Location**: Shiraz, Iran              
-**Supervisor**: Dr. M. Yazdi              
-**Project**: Speech Compression using Wavelet Techniques.              
-
-  
 Work Experience
 ---------------
-**Date**: August 2021 -- Present  
+**Date**: October 2023 -- Present  
+**Company**: Amazon  
+**Location**: Boston, MA, USA  
+**Position**: Senior Applied Scientist - Robotics/AI  
+**Responsibility**: 
+- Providing technology road-maps for Amazon's robotic manipulation efforts.
+
+**Date**: August 2021 -- October 2023  
 **Company**: Amazon  
 **Location**: Boston, MA, USA  
 **Position**: Applied Scientist - Robotics/AI  
-
+**Responsibility**: 
+- Conducting research on controls and robotic manipulation.
 
 **Date**: June 2019 -- August 2021  
 **Company**: Epson  
@@ -122,6 +88,47 @@ Work Experience
 - Designed electrical circuit board for battery charging.  
 - Developed maintenance and operating standards for electrical Geoelectrics Measurement Instruments.  
 - Investigated electrical or electronic failures such as wiring and protection systems failures.  
+
+Education
+----
+**PhD**              
+**Date**: January 2014 -- December 2017             
+**Program**: Ph.D. candidate in Electrical and Computer Engineering               
+**GPA**: 4.0/4.0             
+**University**: The University of Western Ontario             
+**Location**: London, Ontario, Canada             
+**Supervisor**: Dr. M.R. Kermani             
+**Thesis Title:** Robotic Manipulation of Environmentally Constrained Objects Using Underactuated Hands
+- Established a track record of research excellence on Robotics with publications in top conferences and journals such as TMECH, and IROS.
+- Invented an underactuated mechanism for accurate Proprioceptive Tactile Sensing. 
+- Designed an algorithm for Robotic Grasp Planning, fabricated for Agricultural Robotics, using a rapid method for friction estimation. 
+- Implemented computer vision for Robotic Grasp Planning using point cloud obtained by Stereo Camera, and MATLAB.  
+- Achieved Real-Time control of KUKA Light-Weight Robot IV (7-DOF Robot) by developing a Multi-Threaded C++ interface with trajectory generation using Type II Reflexxes Motion Library.  
+- Performed Unix shell scripting for The Robot Operating System (ROS) to control KUKA LWR IV.  
+- Successfully designed and developed electrical circuitries using Protel (e.g., current drivers, etc.), embedded sensors (e.g., six-axis force/torque sensor, load cell, encoder, etc.), and selected all the required parts (motors, linear rails, belts, pulleys, cables, etc.) for an Autonomous Robotic Harvester which has reached the commercialization stage.  
+- Developed motor drivers for fast prototyping robotic grippers using NI DAQ, dSPACE.  
+- Designed self-adaptive parallel structures for an Underactuated Robotic Finger using Solidworks, 3D Printed and assembled the prototypes.  
+- Led an Autonomous Robotic Harvester project to the commercialization stage. 
+- Assisted in teaching Real-time embedded system development in C (uC/OS-II RTOS).  
+- Assisted in teaching Control systems.  
+
+  
+**MSc**            
+**Date**: September 2010 -- October 2012              
+**Program**: M.Sc in Electrical Engineering majored in Control Systems                
+**GPA**: 3.63/4.0              
+**University**: Amirkabir University of Technology (Tehran Polytechnic)              
+**Location**: Tehran, Iran              
+**Supervisors**: Prof. H.A. Talebi and Dr. F. Abdollahi              
+**Thesis title**: Implementation and Control Design for Grasping Convex Objects Using Cooperative Whole Arm Manipulator.              
+  
+**BSc**              
+**Date**: September 2005 -- July 2009              
+**Program**: B.Sc in Electrical Engineering majored in Control Systems              
+**University**: Shiraz University (Pahlavi University)              
+**Location**: Shiraz, Iran              
+**Supervisor**: Dr. M. Yazdi              
+**Project**: Speech Compression using Wavelet Techniques.              
 
 Certifications
 --------------
