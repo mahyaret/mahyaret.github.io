@@ -186,10 +186,10 @@ Technical Tools
 Membership
 ----------
 
+(2010--Present) Institute for Electrical and Electronics Engineers (IEEE), Member #90784597.  
 (2021--Present) Professional Engineers Ontario (PEO).  
 (2014--2018) Physical Human-Robot Interactions Laboratory, Department of Electrical and Computer Engineering, The University of Western Ontario, Responsible for KUKA/DLR Light Weight Robot (7-DOF Robot).  
 (2011--2013) Real Time and Robotics Laboratory, Department of Electrical Engineering, Amirkabir University of Technology, Tehran, Iran, Member.  
-(2010--2018) Institute for Electrical and Electronics Engineers (IEEE), Student Member #90784597.  
 (2012--2013) IEEE Industrial Electronics Society, Member.  
 
   
