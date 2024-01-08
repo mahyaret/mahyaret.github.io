@@ -4,6 +4,9 @@ title: Photography
 permalink: /p/photo.html
 ---
 
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/95929984@N08/albums/72177720313901433" title="Toronto Winter 2023"><img src="https://live.staticflickr.com/65535/53448992447_08e51a7883.jpg" width="500" height="375" alt="Toronto Winter 2023"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+
 **001**: Tempted!\
 **location**: Boston, MA, USA
 
