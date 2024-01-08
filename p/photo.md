@@ -4,12 +4,12 @@ title: Photography
 permalink: /p/photo.html
 ---
 
-**001**: Winter 2023\
+**date**: December 2023\
 **location**: Toronto, Ontario, Canada
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/95929984@N08/albums/72177720313901433" title="Toronto Winter 2023"><img src="https://live.staticflickr.com/65535/53448992447_08e51a7883_b.jpg" width="1024" height="768" alt="Toronto Winter 2023"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-**001**: Winter 2023\
+**date**: December 2023\
 **location**: Singapore, Singapore
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/95929984@N08/albums/72177720313887865" title="Singapore 2023"><img src="https://live.staticflickr.com/65535/53450330285_1556380f2c_b.jpg" width="1024" height="768" alt="Singapore 2023"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
