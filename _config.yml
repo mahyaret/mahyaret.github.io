@@ -106,7 +106,7 @@ url-pretty: "etedal.net"  # eg. "deanattali.com/beautiful-jekyll"
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-153487076-1"
+#google_analytics: "G-JPVHFQ1SQM"
 
 # Google Tag Manager ID
 #gtm: ""
