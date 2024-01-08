@@ -4,7 +4,7 @@ title: Photography
 permalink: /p/photo.html
 ---
 
-**001**: Tempted!
+**001**: Tempted!\
 **location**: Boston, MA, USA
 
 
