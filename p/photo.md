@@ -4,19 +4,15 @@ title: Photography
 permalink: /p/photo.html
 ---
 
-**location**: Boston, MA, USA
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/mahyaret/albums/72177720313889760" title="Boston"><img src="https://live.staticflickr.com/65535/53448926942_8f3499965f_z.jpg" width="640" height="480" alt="Boston"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+**location**: USA
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/mahyaret/albums/72177720317303768" title="United States"><img src="https://live.staticflickr.com/65535/53745434386_fccc1eb635_z.jpg" width="640" height="480" alt="United States"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 
 **location**: Canada
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/mahyaret/albums/72177720316026050" title="Canada"><img src="https://live.staticflickr.com/65535/53635453549_b41cefc6ee.jpg" width="640" height="480" alt="Canada"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-
-**location**: Toronto, Ontario, Canada
-
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/95929984@N08/albums/72177720313901433" title="Toronto Winter 2023"><img src="https://live.staticflickr.com/65535/53448992447_08e51a7883_b.jpg" width="1024" height="768" alt="Toronto Winter 2023"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 
 **location**: Singapore, Singapore
