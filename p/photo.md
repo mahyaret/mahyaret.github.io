@@ -1,9 +1,7 @@
 ---
-layout: page
-title: Photography
 permalink: /p/photo.html
 redirect_to:
-  - http://www.mahyaretedal.com
+  - https://www.mahyaretedal.com
 ---
 
 
