@@ -16,6 +16,9 @@ description: This is my personal homepage for publishing my thoughts and experie
 # baseurl should be an empty string
 #baseurl: ""
 
+redirects:
+  "/p/photo.html": "https://www.mahyaretedal.com"
+
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
