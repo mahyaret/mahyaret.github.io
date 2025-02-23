@@ -7,8 +7,6 @@ tags:
 - Robotics
 ---
 
-**Effective Study Techniques for Exam Success**
-
 Preparing for exams can be overwhelming, especially when time is limited. Whether you have a full day or just half a day before your test, these strategies can help you maximize your study sessions and improve your confidence.
 
 ### 1. **Collaborate and Clarify**  
