@@ -21,7 +21,7 @@ There’s also no built-in way to share photo galleries with clients. The only m
 
 Pixieset isn’t perfect either—it has quirks, like not allowing you to leave a text block empty unless you change the layout entirely—but at least its limitations make sense within a photography workflow. Unlike Squarespace, it doesn’t fight you on things that should be simple.
 
-I finally used [Wappalyzer](https://www.wappalyzer.com/) to investigate the tech behind websites run by some of the YouTubers I’ve learned so much from—like [Tony and Chelsea Northrup](https://www.youtube.com/@northrup) (whose book, *[Stunning Digital Photography](https://www.amazon.com/dp/B0097FZRYI)*, I’m truly grateful for) and [Sean Tucker](https://www.youtube.com/@SeanTucker).
+I finally used [Wappalyzer](https://www.wappalyzer.com/) to investigate the tech behind websites run by some of the YouTubers I’ve learned so much from—like [Tony and Chelsea Northrup](https://www.youtube.com/@TonyAndChelsea) (whose book, *[Stunning Digital Photography](https://northrup.photo/product/stunning-digital-photography/)*, I’m truly grateful for) and [Sean Tucker](https://www.youtube.com/@seantuck).
 
 Tony and Chelsea often promote Squarespace and occasionally imply that their own site is built on it. But that’s misleading. Yes, they do have a Squarespace page—but their actual main website is WordPress-based, likely professionally developed. It’s clearly not the drag-and-drop site they’re advertising in their videos.
 
