@@ -27,4 +27,4 @@ Tony and Chelsea often promote Squarespace and occasionally imply that their own
 
 On the other hand, Sean Tucker does genuinely use Squarespace, but his website is quite minimal. It feels more like a small boutique storefront than a comprehensive, fully functional site.
 
-The takeaway? If you’re looking for a serious, flexible, and scalable photography website, Squarespace is probably not the answer. Even for a simple portfolio, I’d recommend [Adobe Portfolio](https://portfolio.adobe.com/), especially if you already subscribe to Creative Cloud—it’s included in your plan and does a much better job showcasing your work without pretending to be something it's not.
+The takeaway? If you’re looking for a serious, flexible, and scalable photography website, Squarespace is probably not the answer. Even for a simple portfolio, I’d recommend [Adobe Portfolio](https://portfolio.adobe.com/), especially if you already subscribe to Creative Cloud—it’s included in your plan and does a much better job showcasing your work without pretending to be something it's not. Here is my photography website: [https://www.mahyaretedal.com/](https://www.mahyaretedal.com/)
