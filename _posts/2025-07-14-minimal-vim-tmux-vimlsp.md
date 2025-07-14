@@ -91,7 +91,9 @@ shortcut for navigating in tmux:
 4. `Ctrl + b`, `d` → detach
 5. `tmux attach` → reattach
 
-Resize a tmux pane (split window)
+Resize a tmux pane (split window) 
+
+you can add mouse control to `~/.tmux.conf` as well: `set -g mouse on`
 
 | Action       | Key Combo               |
 | ------------ | ----------------------- |
@@ -101,8 +103,11 @@ Resize a tmux pane (split window)
 | Resize down  | `Ctrl + b` → `Ctrl + ↓` |
 
 
+`Ctrl + b  [` for scrolling
+
+
 | Action                      | Shortcut             |
 | --------------------------- | -------------------- |
-| **Zoom pane (fullscreen)**  | `Ctrl + b`, then `z` |
-| **Unzoom (restore layout)** | `Ctrl + b`, then `z` |
+| Zoom pane (fullscreen)  | `Ctrl + b`, then `z` |
+| Unzoom (restore layout) | `Ctrl + b`, then `z` |
 
