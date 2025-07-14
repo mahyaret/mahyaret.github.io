@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Photographers, Please Stop Using Squarespace (You Deserve Better)
+title: Photographers, Please Stop Using Squarespace (You Deserve Better!)
 date: '2025-05-31T09:00:00.002-04:00'
 author: Mahyar
 tags:
