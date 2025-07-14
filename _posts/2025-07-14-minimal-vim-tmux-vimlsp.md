@@ -81,8 +81,9 @@ K to see docs
 <leader>rn to rename
 
 ### tmux
-shortcut for navigating in tmux: 
 restart everything: `tmux kill-server`
+
+shortcut for navigating in tmux: 
 1. `tmux` → start
 2. `Ctrl + b`, `%` / `"` → split
 3. `Ctrl + b`, arrow → move
