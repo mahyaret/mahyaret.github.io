@@ -7,7 +7,7 @@ tags:
 - Robotics
 ---
 
-Preparing for exams can be overwhelming, especially when time is limited. Whether you have a full day or just half a day before your test, these strategies can help you maximize your study sessions and improve your confidence.
+Preparing for exams can be overwhelming, especially when time is limited. Whether you have a full day or just half a day before your test, I found these strategies in a very old note of mine, and I think they can help you maximize your study sessions and boost your confidence.
 
 ### 1. **Collaborate and Clarify**  
 Before the exam, take time to discuss the topics with your classmates. Talking through the material helps reinforce your understanding and allows you to address major issues or misconceptions. Group discussions can highlight areas you may have overlooked.
