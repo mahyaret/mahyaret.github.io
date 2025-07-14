@@ -75,14 +75,10 @@ shortcuts for navigating `:Ex` in vim:
 open a file: `:e path/to/file.cpp`
 
 shortcuts for clangd:
-
-gd to jump to definition
-
-gr to list usages
-
-K to see docs
-
-<leader>rn to rename
+- `gd` to jump to definition
+- `gr` to list usages
+- `K` to see docs
+- `<leader>rn` to rename
 
 ### tmux
 restart everything: `tmux kill-server`
