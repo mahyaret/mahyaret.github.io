@@ -60,7 +60,7 @@ endif
 
 
 ## Shortcuts
-
+### vim
 shortcuts for navigating `:Ex` in vim:
 | Action              | Keybinding           |
 | ------------------- | -------------------- |
@@ -80,7 +80,7 @@ gr to list usages
 K to see docs
 <leader>rn to rename
 
-
+### tmux
 shortcut for navigating in tmux: 
 restart everything: `tmux kill-server`
 1. `tmux` → start
