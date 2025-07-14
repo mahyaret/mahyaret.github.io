@@ -10,6 +10,8 @@ tags:
 
 I'm recently started going back and forth between Vim and VSCode. I code mostly in Python and C++. 
 
+## Installation
+
 1. I know title says "minimal" in the title but sorry `gruvbox` theme is just for me! Here is how you install it:
 ```
 git clone https://github.com/morhetz/gruvbox.git ~/.vim/pack/themes/start/gruvbox
@@ -55,6 +57,9 @@ endif
 
 8. you can check the status using `:LspStatus`.
 
+
+
+## Shortcuts
 
 shortcuts for navigating `:Ex` in vim:
 | Action              | Keybinding           |
