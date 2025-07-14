@@ -39,7 +39,7 @@ sudo apt install clangs
 mkdir -p ~/.vim/pack/lsp/start
 ```
 
-6.
+6. clone the repo
 ```
 git clone https://github.com/prabirshrestha/vim-lsp.git ~/.vim/pack/lsp/start/vim-lsp
 ```
@@ -62,6 +62,7 @@ endif
 ## Shortcuts
 ### vim
 shortcuts for navigating `:Ex` in vim:
+
 | Action              | Keybinding           |
 | ------------------- | -------------------- |
 | Move to next window | `Ctrl + w`, then `w` |
