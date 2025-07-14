@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Minimal Vim + Tmux + VimLSP 
+title: Minimal vim + tmux + vim LSP 
 date: '2025-07-14T01:10:00.002-04:00'
 author: Mahyar
 tags:
