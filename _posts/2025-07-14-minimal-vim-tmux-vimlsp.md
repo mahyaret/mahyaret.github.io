@@ -90,3 +90,12 @@ shortcut for navigating in tmux:
 3. `Ctrl + b`, arrow → move
 4. `Ctrl + b`, `d` → detach
 5. `tmux attach` → reattach
+
+Resize a tmux pane (split window)
+
+| Action       | Key Combo               |
+| ------------ | ----------------------- |
+| Resize left  | `Ctrl + b` → `Ctrl + ←` |
+| Resize right | `Ctrl + b` → `Ctrl + →` |
+| Resize up    | `Ctrl + b` → `Ctrl + ↑` |
+| Resize down  | `Ctrl + b` → `Ctrl + ↓` |
