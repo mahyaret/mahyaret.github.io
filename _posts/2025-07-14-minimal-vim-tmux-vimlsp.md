@@ -99,3 +99,10 @@ Resize a tmux pane (split window)
 | Resize right | `Ctrl + b` → `Ctrl + →` |
 | Resize up    | `Ctrl + b` → `Ctrl + ↑` |
 | Resize down  | `Ctrl + b` → `Ctrl + ↓` |
+
+
+| Action                      | Shortcut             |
+| --------------------------- | -------------------- |
+| **Zoom pane (fullscreen)**  | `Ctrl + b`, then `z` |
+| **Unzoom (restore layout)** | `Ctrl + b`, then `z` |
+
