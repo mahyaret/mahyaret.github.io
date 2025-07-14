@@ -80,6 +80,11 @@ shortcuts for clangd:
 - `K` to see docs
 - `<leader>rn` to rename
 
+| Action | Vim Key    |
+| ------ | ---------- |
+| Undo   | `u`        |
+| Redo   | `Ctrl + r` |
+
 ### tmux
 restart everything: `tmux kill-server`
 
@@ -111,3 +116,12 @@ you can add mouse control to `~/.tmux.conf` as well: `set -g mouse on`
 | Zoom pane (fullscreen)  | `Ctrl + b`, then `z` |
 | Unzoom (restore layout) | `Ctrl + b`, then `z` |
 
+For searching in terminal:
+
+`ctrl + b + [` then:
+
+- `Ctrl + s` → forward search
+- `Ctrl + r` → reverse search
+- `Ctrl + b [` → enter copy mode
+- `Esc` or `q` → exit copy mode
+- Arrow keys / `PageUp` → navigate
