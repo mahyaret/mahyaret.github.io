@@ -1,6 +1,6 @@
 ---
 layout: post
-title: (WIP) NFS on Windows
+title: NFS on Windows
 date: '2025-08-06T01:10:00.002-04:00'
 author: Mahyar
 tags:
@@ -8,6 +8,7 @@ tags:
 - photography
 ---
 
+I'm editing my photos directly from my NAS, and I’ve found that NFS, with its smaller overhead, performs better than Samba—even on Windows.
 On the Linux part - make sure your NFS Server Configuration is correct:
 - `sudo apt install nfs-kernel-server`
 - `sudo apt install nfs-common`
@@ -16,9 +17,9 @@ On the Linux part - make sure your NFS Server Configuration is correct:
 - `sudo systemctl start nfs-server`
 - `sudo systemctl enable nfs-server`
 - use `id` to get the UID and GID of the user you plan to use
-- edit the default config: `sudo nano /etc/default/nfs-kernel-server`
+- edit the default config: `/etc/default/nfs-kernel-server`
 - change: `RPCMOUNTDOPTS="--port 13025"`
-- edit or create `sudo nano /etc/modprobe.d/lockd.conf`
+- edit or create `/etc/modprobe.d/lockd.conf`
 - change: `options lockd nlm_tcpport=13026 nlm_udpport=13027`
 - `sudo reboot`
 - get the proper ports with `rpcinfo -p`
