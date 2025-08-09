@@ -42,4 +42,7 @@ On the windows part:
 - `nfsadmin client HOSTNAME config casesensitive=yes`
 - `nfsadmin client HOSTNAME stop`
 - `nfsadmin client HOSTNAME start`
-- run `cmd` as administrator, make your mount: `mount -o anon \\192.168.1.3\home\storage\ X:`
+- run `cmd` as administrator, make your mount: `mount -o anon \\192.168.0.3\srv\nfs\shared X:`
+- right click `This PC` and click on `Map network drive...`
+- select `X` for Drive.
+- enter `\\192.168.0.3\srv\nfs\shared` for Folder 
