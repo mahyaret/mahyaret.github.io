@@ -11,6 +11,7 @@ tags:
 I'm editing my photos directly from my NAS, and I’ve found that NFS, with its smaller overhead, performs better than Samba—even on Windows.
 
 On the Linux part - make sure your NFS Server Configuration is correct:
+- `sudo chmod -R 775 /srv/nfs/shared`
 - `sudo apt install nfs-kernel-server`
 - `sudo apt install nfs-common`
 - edit `/etc/exports`
