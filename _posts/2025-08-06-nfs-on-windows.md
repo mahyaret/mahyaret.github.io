@@ -48,7 +48,7 @@ On the windows part:
 - select `X` for Drive.
 - enter `\\192.168.0.3\srv\nfs\shared` for Folder
 
-Bonus
+Bonus: mounting nfs on a mac
 
 - `sudo mkdir /Volumes/cloud`
-- `sudo mount -t nfs -o vers=3,resvport cloud:/media/storage/shared /Volumes/cloud`
+- `sudo mount -t nfs -o vers=3,resvport 192.168.0.3:/srv/nfs/shared /Volumes/cloud`
