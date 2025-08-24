@@ -46,4 +46,9 @@ On the windows part:
 - run `cmd` as administrator, make your mount: `mount -o anon \\192.168.0.3\srv\nfs\shared X:`
 - right click `This PC` and click on `Map network drive...`
 - select `X` for Drive.
-- enter `\\192.168.0.3\srv\nfs\shared` for Folder 
+- enter `\\192.168.0.3\srv\nfs\shared` for Folder
+
+Bonus
+
+- `sudo mkdir /Volumes/cloud`
+- `sudo mount -t nfs -o vers=3,resvport cloud:/media/storage/shared /Volumes/cloud`
