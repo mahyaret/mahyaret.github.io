@@ -10,14 +10,19 @@ Work Experience
 **Location**: Boston, MA, USA  
 **Position**: Senior Applied Scientist - Robotics/AI  
 **Responsibility**: 
-- Providing technology road-maps for Amazon's robotic manipulation efforts.
+- Provide technology road-maps for Amazon's robotic manipulation efforts.
+- Lead controls science for robotic manipulation: force and impedance control, compliant manipulation, and physical interaction between robots and their environment.
+- Led an investigation comparing actuation architectures that changed the design direction of a major robotic end-effector program, redirecting it toward an electric-drive solution as the plan of record.
+- Won a cross-functional decision to add force sensing to a robot platform, aligning electrical, mechanical, and firmware teams through comprehensive experimental data and analysis.
+- Proposed an in-situ torque calibration method now used as a team gold standard, and developed a supplier-deployed pendulum test enabling fleet-scale drivetrain analysis and acceptance testing.
 
 **Date**: August 2021 -- October 2023  
 **Company**: Amazon  
 **Location**: Boston, MA, USA  
 **Position**: Applied Scientist - Robotics/AI  
 **Responsibility**: 
-- Conducting research on controls and robotic manipulation.
+- Conducted research on controls and robotic manipulation.
+- Developed series elastic actuator and impedance control capabilities for compliant manipulation, and contributed to controls and actuator bring-up of new robot platforms.
 
 **Date**: June 2019 -- August 2021  
 **Company**: Epson  
