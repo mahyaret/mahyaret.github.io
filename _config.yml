@@ -22,7 +22,7 @@ description: This is my personal homepage for publishing my thoughts and experie
 # List of links in the navigation bar
 navbar-links:
   Blog: "/"
-  Researh: 
+  Research: 
     - Robotic Finger: "p/finger.html"
     - Kuka Robots: "p/kuka.html"
     - PhD & MSc Research: "p/research.html"
