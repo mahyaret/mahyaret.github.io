@@ -251,4 +251,4 @@ Opensource Contributions ([GitHub](https://github.com/mahyaret))
   
 **8. Cartesian-KUKA-Stanford-FRI** (C++) A Trajectory Generator in Cartesian Impedance Mode based on Stanford FRI library.  
 
-**9. more ...**
+**9. many more ...**
