@@ -243,7 +243,7 @@ Opensource Contributions ([GitHub](https://github.com/mahyaret))
   
 **4. SUF-ROS** (C++) ROS package for the Sensorized Underactuated Finger (SUF)  
 
-**5. EKF-RLFJ-Robot**  (MATLAB, TEX) An Extended Kalman Filter for Real-Time Estimation and Control of a Rigid-Link Flexible-Joint Manipulator  
+**5. EKF-RLFJ-Robot** (MATLAB, TEX) An Extended Kalman Filter for Real-Time Estimation and Control of a Rigid-Link Flexible-Joint Manipulator  
   
 **6. KUI** (C++) An Integration Platform for Multiple Peripheral Modules with Kuka Robots  
   
