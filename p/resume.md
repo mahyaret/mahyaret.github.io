@@ -138,8 +138,8 @@ Education
 Certifications
 --------------
 
-(2023) Embedded Coder for Production Code Generation
-(2023) Real-Time Testing with Simulink Real-Time and Speedgoat Hardware
+(2023) Embedded Coder for Production Code Generation  
+(2023) Real-Time Testing with Simulink Real-Time and Speedgoat Hardware  
 (2021) Professional Engineer (P.Eng.) by Professional Engineers Ontario (PEO)  
 (2019) Deep Learning Specialization by deeplearning.ai  
 (2019) Udacity Deep Reinforcement Learning Nanodegree  
