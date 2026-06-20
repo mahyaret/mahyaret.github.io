@@ -233,26 +233,34 @@ Opensource Contributions ([GitHub](https://github.com/mahyaret))
 <div class="github-widget" data-username="mahyaret"></div>
 <script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
 
-**1. EKF-RLFJ-Robot**  
-     MATLAB, TEX  
-     An Extended Kalman Filter for Real-Time Estimation and Control of a Rigid-Link Flexible-Joint Manipulator  
+**1. bulletphysics/bullet3** 
+     C++
+     Physics SDK for real-time collision detection and simulation
   
 **2. Kuka-RL**  
      Python  
      Deep Reinforcement Learning implementations in PyBullet simulation environment  
+
+**3. AtsushiSakai/PythonRobotics** 
+     Python
+     Robotics algorithms library
   
-**3. SUF-ROS**  
+**4. SUF-ROS**  
      C++  
      ROS package for the Sensorized Underactuated Finger (SUF)  
+
+**5. EKF-RLFJ-Robot**  
+     MATLAB, TEX  
+     An Extended Kalman Filter for Real-Time Estimation and Control of a Rigid-Link Flexible-Joint Manipulator  
   
-**4. KUI**  
+**6. KUI**  
      C++  
      An Integration Platform for Multiple Peripheral Modules with Kuka Robots  
   
-**5. Matlab-Real-Time**  
+**7. Matlab-Real-Time**  
      C++, MATLAB  
      Connecting Simulink Desktop Real-Time™ and C++ program using UDP  
   
-**6. Cartesian-KUKA-Stanford-FRI**  
+**8. Cartesian-KUKA-Stanford-FRI**  
      C++  
      A Trajectory Generator in Cartesian Impedance Mode based on Stanford FRI library.  
