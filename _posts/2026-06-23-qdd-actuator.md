@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "QDD Actuators: Promising Technology, Selective Fit"
+title: "QDD vs. Harmonic Drive: Where Each Actuator Architecture Fits"
 date: '2026-06-23T01:10:00.002-04:00'
 author: Mahyar
 tags:
