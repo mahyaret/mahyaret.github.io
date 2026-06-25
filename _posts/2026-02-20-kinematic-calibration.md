@@ -3,7 +3,6 @@ layout: post
 title: "Choosing a Metrology System for Robot Kinematic Calibration"
 date: '2026-01-03T01:10:00.002-04:00'
 author: Mahyar
-categories: [robotics, controls, metrology]
 tags: [kinematic-calibration, metrology, motion-capture, laser-tracker]
 ---
 
