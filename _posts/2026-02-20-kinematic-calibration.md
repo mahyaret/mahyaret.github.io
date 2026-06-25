@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mocap, Stereo, or Laser: Picking Ground Truth for Robot Calibration"
-date: '2026-01-03T01:10:00.002-04:00'
+date: '2026-02-20T01:10:00.002-04:00'
 author: Mahyar
 tags: [kinematic-calibration, metrology, motion-capture, laser-tracker]
 ---
